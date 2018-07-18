@@ -1,2 +1,2 @@
-# Web_Services
+# Web Services
 The DGIWG will create and maintain standards and implementation profiles for geospatial web services which foster the discovery, retrieval, exchange, and use of geospatial data and products. It will address the technical issues related to geospatial information services, respective interfaces, and required formats. Where possible public domain standards based on ISO and OGC standards will be used or profiled.
