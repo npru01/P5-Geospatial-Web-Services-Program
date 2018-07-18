@@ -29,7 +29,7 @@ Date	Edition
 number 	Primary clauses
 modified	Description
 [#status_codes,reftext='{table-caption} {counter:table-num}']
-[cols="15,85",options="header"]
+[cols="15,85,85,85",options="header"]
 !===
 |Date |Edition number |Primary clauses modified | Description
 |`2018.07.18` |0.1 | clauses 0.1.1 | first draft of spec template.
