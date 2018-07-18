@@ -9,7 +9,13 @@ Acknowledgement
 (Clauses i-iv are optional, and not mandated for approval of issue, however assist in the management of the document)
 
 i.	Contributing participants
-Nation 	Parent organization
+
+[#status_codes,reftext='{table-caption} {counter:table-num}']
+[cols="15,85",options="header"]
+!===
+|Nation |Parent organization
+|`FRA` | National Institute of Geographic and Forest Information
+!===
 
 
 
@@ -25,9 +31,7 @@ All questions regarding this document shall be directed to the secretariat@dgiwg
 NOTE: All personal information will be removed when an internal document is made public. This includes names and personal e-mail accounts.
 
 iii.	Revision history
-Date	Edition
-number 	Primary clauses
-modified	Description
+
 [#status_codes,reftext='{table-caption} {counter:table-num}']
 [cols="15,85,85,85",options="header"]
 !===
