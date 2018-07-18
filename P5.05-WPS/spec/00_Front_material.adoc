@@ -20,9 +20,15 @@
 
 
 === ii.Document points of contact
-	For internal documents use:
-	All questions regarding this document shall be directed to the editor or the contributors:
-Person	Organization	Email
+*For internal documents use:*
+All questions regarding this document shall be directed to the editor or the contributors:
+
+[#status_codes,reftext='{table-caption} {counter:table-num}']
+[cols="50,85,85",options="header"]
+!===
+|Person |Organization | Email
+|Dimitri Sarafinof| National Institute of Geographic and Forest Information | Dimitri.Sarafinof@ign.fr
+!===
 
 
 
