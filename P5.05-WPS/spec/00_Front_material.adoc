@@ -23,7 +23,7 @@
 *For internal documents use:*
 All questions regarding this document shall be directed to the editor or the contributors:
 
-[#status_codes,reftext='{table-caption} {counter:table-num}']
+[#poc,reftext='{table-caption} {counter:table-num}']
 [cols="50,85,85",options="header"]
 !===
 |Person |Organization | Email
@@ -38,7 +38,7 @@ NOTE: All personal information will be removed when an internal document is made
 
 === iii.Revision history
 
-[#status_codes,reftext='{table-caption} {counter:table-num}']
+[#revision_history,reftext='{table-caption} {counter:table-num}']
 [cols="15,85,85,85",options="header"]
 !===
 |Date |Edition number |Primary clauses modified | Description

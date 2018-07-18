@@ -1,15 +1,19 @@
 
-DGIWG – xxx
+:title: DGIWG – xxx
 Template for STD, TCR, and HBK documents
-	 
-Document type:	Standard, Technical Report, or Handbook
-Document date:	dd month yyyy
-Edition :	x.x.x
-Responsible Party: 	DGIWG
-Editor :
-Audience: 	DGIWG participants and associates
-Abstract: 	Template to create STD, TCR, and HBK documents
-Copyright:	(C) Copyright DGIWG, some rights reserved  -  (CC) (By:) Attribution
+
+
+[#front_page,reftext='{table-caption} {counter:table-num}']
+[cols="50,85"]
+!===
+|Document type:	|Standard, Technical Report, or Handbook
+|Document date:	|dd month yyyy
+|Edition :	|x.x.x
+|Responsible Party: 	|DGIWG
+|Editor : |
+|Audience: 	|DGIWG participants and associates
+|Abstract: 	|Template to create STD, TCR, and HBK documents
+|Copyright:	|(C) Copyright DGIWG, some rights reserved  -  (CC) (By:) Attribution
 You are free:
 -	to copy, distribute, display, and perform/execute the work
 -	to make derivative works
@@ -20,3 +24,4 @@ Under the following conditions:
 Any of these conditions can be waived if you get permission from the copyright holder DGIWG.
 Your fair use and other rights are in no way affected by the above.
 This is a human-readable summary of the Legal Code (the full license is available from Creative Commons <http://creativecommons.org/licenses/by/2.0/ >).
+!===
