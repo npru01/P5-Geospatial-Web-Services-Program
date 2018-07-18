@@ -7,12 +7,12 @@ Necessary information to describe a process
     * E.g. Line of Sight Web Processing Service
   * Keyword
     * Line of sight, viewshed, 
-o	Abstract
-	The Line of Sight WPS calculates visible locations, using land elevation data, along a line between an observer and a target point. 
-o	Metadata
-	OWS Metadata
-	Quality of service elements ? Performance? 
-	
+    * Abstract
+  * The Line of Sight WPS calculates visible locations, using land elevation data, along a line between an observer and a target point. 
+ * Metadata
+  * OWS Metadata
+  * Quality of service elements ? Performance?  
+  	
 -	Input (see table 43)
 o	Identifier
 	Id
