@@ -26,7 +26,7 @@ Your fair use and other rights are in no way affected by the above.
 This is a human-readable summary of the Legal Code (the full license is available from Creative Commons <http://creativecommons.org/licenses/by/2.0/ >).
 !===
 
-include::00_Front_material.adoc[]
+include::00_Front_Material.adoc[]
 
 include::00_Introduction.adoc[]
 
@@ -34,7 +34,7 @@ include::01_Scope.adoc[]
 
 include::02_Conformance.adoc[]
 
-include::03_NormativeReference.adoc[]
+include::03_Normative_Reference.adoc[]
 
 include::04_Terms_and_Definitions.adoc[]
 
