@@ -1,5 +1,5 @@
 
-![DGIWG Logo](https://github.com/DGIWG/P5-Geospatial-Web-Services-Program/blob/master/P5.05-WPS/images/DGIWG_logo.png "DGIWG Logo")
+image::https://github.com/DGIWG/P5-Geospatial-Web-Services-Program/blob/master/P5.05-WPS/images/DGIWG_logo.png[DGIWG Logo]
 
 :title: DGIWG – xxx
 Template for STD, TCR, and HBK documents
