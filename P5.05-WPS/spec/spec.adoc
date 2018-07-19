@@ -1,4 +1,6 @@
 
+![DGIWG Logo](../images/DGIWG_logo.png "DGIWG Logo")
+
 :title: DGIWG – xxx
 Template for STD, TCR, and HBK documents
 
@@ -38,4 +40,4 @@ include::03_Normative_Reference.adoc[]
 
 include::04_Terms_and_Definitions.adoc[]
 
-include::05_Content_Chapter.adoc[]
+include::05_Subject_Matter_Content.adoc[]
