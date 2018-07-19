@@ -27,9 +27,15 @@ This is a human-readable summary of the Legal Code (the full license is availabl
 !===
 
 include::00_Front_material.adoc[]
+
 include::00_Introduction.adoc[]
+
 include::01_Scope.adoc[]
+
 include::02_Conformance.adoc[]
+
 include::03_NormativeReference.adoc[]
+
 include::04_Terms_and_Definitions.adoc[]
+
 include::05_Content_Chapter.adoc[]
