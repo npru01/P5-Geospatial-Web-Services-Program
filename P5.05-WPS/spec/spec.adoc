@@ -1,8 +1,78 @@
 
+// *****************************************************************************
+// Editors: Guidance for editors to be put here
+// *****************************************************************************
+
+// *****************************************************************************
+// Editors please provide the following front-matter elements:
+// *****************************************************************************
+
+// *****************************************************************************
+// Provide the document title (DGIWG title)
+// Do not alter the testbed-number prefix.
+// The title here should match the title on the first page.
+// *****************************************************************************
+
+:title: Template for STD, TCR, and HBK documents
+
+// *****************************************************************************
+// Document Reference, with format "DGIWG - XXX" (e.g., DGIW - 112 ).
+// An identifier can be obtained in the OGC Portal at:
+// https://portal.dgiwg.org/?m=public&orderby=default&tab=1
+// *****************************************************************************
+
+:docReference: DGIWG – xxx
+
+// *****************************************************************************
+// Date sumiteed to DGIWG Ballot, with format: dd-mm-yyy.
+// *****************************************************************************
+
+:submissionDate: DD-MM-YYYY
+
+// *****************************************************************************
+// Names of all editors, comma-separated (e.g., John Doe, Sue Smith)
+// *****************************************************************************
+
+:editor: Name(s)
+
+// *****************************************************************************
+// Proposed DGIWG panels for review (e.g. P5 - WSTP)
+// *****************************************************************************
+
+:workingGroup: Panel(s) for Review: Name(s)
+
+// *****************************************************************************
+// End of Editor's front-matter elements.
+// Editors please continue at "include::2-references.adoc[]" below.
+// *****************************************************************************
+
+// *****************************************************************************
+// Editors please do not alter the administrative front matter below.
+// *****************************************************************************
+:category: DGIWG STD, TCR, or HBK
+:publicationDate: DD-MM-YYYY
+:approvalDate: DD-MM-YYYY
+:referenceURLID: ID
+:copyrightYear: 2018
+//
+:titletext: {title}
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc: macro
+:toclevels: 3
+:numbered:
+:sectanchors:
+:source-highlighter: coderay
+// set media to output format print or screen for pdf export
+:media: print
+:bibtex-file: resources/bibtex-file.bib
+:bibtex-style: resources/lncs.csl
+
 image::https://github.com/DGIWG/P5-Geospatial-Web-Services-Program/blob/master/P5.05-WPS/images/DGIWG_logo.png[DGIWG Logo, 200, 200]
 
-:title: DGIWG – xxx
-= DGIWG – xxx
+= {docReference}
+//= {title}
 _Template for STD, TCR, and HBK documents_
 
 [#front_page,reftext='{table-caption} {counter:table-num}']
