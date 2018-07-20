@@ -2,7 +2,7 @@
 [[XMLSchemaDocuments]]
 = XML Schema Documents
 
-(( XML Schema Documents may be relevant to an Engineering Report. ))
+(( XML Schema Documents relevant for DGIWG STD. ))
 
 The term “XML schema“ means all the XML schema parts having the same XML namespace, usually separated into multiple XML Schema Document files (with the file type “.xsd“. The XML schema parts in one XML namespace are usually separated into multiple XML Schema Documents to ease human understanding.
 
