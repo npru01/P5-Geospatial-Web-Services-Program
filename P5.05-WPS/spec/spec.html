@@ -1034,7 +1034,7 @@ NOTE: All personal information will be removed when an internal document is made
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 07-110: cl. 2.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG-XXX : clause 2.2</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
@@ -1051,7 +1051,7 @@ NOTE: All personal information will be removed when an internal document is made
 <tbody>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse" class="bare">http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.dgiwg.org/xxx/xxx" class="bare">http://www.dgiwg.org/xxx/xxx</a></p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
@@ -1063,7 +1063,7 @@ NOTE: All personal information will be removed when an internal document is made
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 07-006r1: cl. 10.2.5.1, p. 118</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG-XXX : clause. 10.2.5.1, p. 118</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
@@ -1116,7 +1116,7 @@ NOTE: All personal information will be removed when an internal document is made
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 07-110: cl. 2.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG XXX: cl. 2.2</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
@@ -1133,7 +1133,7 @@ NOTE: All personal information will be removed when an internal document is made
 <tbody>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse" class="bare">http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.dgiwg.org/xxx/xxx" class="bare">http://www.dgiwg.org/xxx/xxx</a></p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
@@ -1145,7 +1145,7 @@ NOTE: All personal information will be removed when an internal document is made
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 07-006r1: cl. 10.2.5.1, p. 118</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OGC DGIWG XXX: clause. 10.2.5.1, p. 118</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
@@ -1159,7 +1159,7 @@ NOTE: All personal information will be removed when an internal document is made
 <h2 id="XMLSchemaDocuments"><a class="anchor" href="#XMLSchemaDocuments"></a>Appendix B: XML Schema Documents</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>XML Schema Documents may be relevant to an Engineering Report.</p>
+<p>XML Schema Documents relevant for DGIWG STD.</p>
 </div>
 <div class="paragraph">
 <p>The term “XML schema“ means all the XML schema parts having the same XML namespace, usually separated into multiple XML Schema Document files (with the file type “.xsd“. The XML schema parts in one XML namespace are usually separated into multiple XML Schema Documents to ease human understanding.</p>
@@ -1200,32 +1200,32 @@ owsServiceProvider.xsd</pre>
 <div class="listingblock">
 <div class="title">GetCapabilities.xsd</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml">&lt;ows:Operation name="GetCapabilities"&gt;
-  &lt;ows:DCP&gt;
-    &lt;ows:HTTP&gt;
-      &lt;ows:Post xlink:href="http://www.opengis.net/?"&gt;
-        &lt;ows:Constraint name="PostEncoding"&gt;
-          &lt;allowedValues&gt;
-            &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
-          &lt;/ows:AllowedValues&gt;
-        &lt;/ows:Constraint&gt;
-      &lt;/ows:Post&gt;
-    &lt;/ows:HTTP&gt;
-  &lt;/ows:DCP&gt;
-&lt;/ows:Operation&gt;
-&lt;ows:Operation name="GetTile"&gt;
-  &lt;ows:DCP&gt;
-    &lt;ows:HTTP&gt;
-      &lt;ows:Post xlink:href="http://www.opengis.net/?"&gt;
-        &lt;ows:Constraint name="PostEncoding"&gt;
-          &lt;ows:AllowedValues&gt;
-            &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
-          &lt;/ows:AllowedValues&gt;
-        &lt;/ows:Constraint&gt;
-      &lt;/ows:Post&gt;
-    &lt;/ows:HTTP&gt;
-  &lt;/ows:DCP&gt;
-&lt;/ows:Operation&gt;</code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;ows:Operation</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">GetCapabilities</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;ows:DCP&gt;</span>
+    <span class="tag">&lt;ows:HTTP&gt;</span>
+      <span class="tag">&lt;ows:Post</span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/?</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;ows:Constraint</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">PostEncoding</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+          <span class="tag">&lt;allowedValues&gt;</span>
+            <span class="tag">&lt;ows:Value&gt;</span>SOAP<span class="tag">&lt;/ows:Value&gt;</span>
+          <span class="tag">&lt;/ows:AllowedValues&gt;</span>
+        <span class="tag">&lt;/ows:Constraint&gt;</span>
+      <span class="tag">&lt;/ows:Post&gt;</span>
+    <span class="tag">&lt;/ows:HTTP&gt;</span>
+  <span class="tag">&lt;/ows:DCP&gt;</span>
+<span class="tag">&lt;/ows:Operation&gt;</span>
+<span class="tag">&lt;ows:Operation</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">GetTile</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;ows:DCP&gt;</span>
+    <span class="tag">&lt;ows:HTTP&gt;</span>
+      <span class="tag">&lt;ows:Post</span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/?</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;ows:Constraint</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">PostEncoding</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+          <span class="tag">&lt;ows:AllowedValues&gt;</span>
+            <span class="tag">&lt;ows:Value&gt;</span>SOAP<span class="tag">&lt;/ows:Value&gt;</span>
+          <span class="tag">&lt;/ows:AllowedValues&gt;</span>
+        <span class="tag">&lt;/ows:Constraint&gt;</span>
+      <span class="tag">&lt;/ows:Post&gt;</span>
+    <span class="tag">&lt;/ows:HTTP&gt;</span>
+  <span class="tag">&lt;/ows:DCP&gt;</span>
+<span class="tag">&lt;/ows:Operation&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -1279,39 +1279,18 @@ owsServiceProvider.xsd</pre>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">June 15, 2016</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I. Simonis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 18, 2018</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D. Sarafinof</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">initial version</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">July 22, 2016</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I. Simonis</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 24, 2016</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WSTP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">comments integrate</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">September 7, 2016</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S. Simmons</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">various</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">preparation for publication</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">March 23, 2017</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I. Simonis</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">template simplified</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">January 18, 2018</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">S. Serich</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">additional guidance to Editors; clean up headings in appendices</p></td>
 </tr>
 </tbody>
 </table>
