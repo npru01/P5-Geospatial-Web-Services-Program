@@ -23,17 +23,17 @@ Examples of Abstract Test Suites are available in an annex of most ISO 191XX doc
 *	GetRepositoryItem (mandatory)
 *	GetDomain (optional)
 
-|Requirement: |OGC 07-110: cl. 2.2
+|Requirement: |DGIWG-XXX : clause 2.2
 |Test type: |Capability
 |====================
 
 .A.1.2	Test case for validity of XML response entity
 [cols=">20h,<80d",width="100%"]
 |====================
-|Test identifier | http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse
+|Test identifier | http://www.dgiwg.org/xxx/xxx
 |Test purpose: |The XML response entity is valid.
 |Test method: |Validate content of response entity against corresponding element declaration.
-|Requirement: |OGC 07-006r1: cl. 10.2.5.1, p. 118
+|Requirement: |DGIWG-XXX : clause. 10.2.5.1, p. 118
 |Test type: |Capability
 |====================
 

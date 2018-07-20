@@ -980,10 +980,355 @@ NOTE: All personal information will be removed when an internal document is made
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="AbstractTestSuite"><a class="anchor" href="#AbstractTestSuite"></a>Appendix A: Abstract Test Suite</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An Abstract Test Suite may be relevant to an Engineering Report.</p>
+</div>
+<div class="paragraph">
+<p>An Abstract Test Suite is specified in Clause 9 and Annex A of ISO 19105. That Clause and Annex specify the ISO/TC 211 requirements for Abstract Test Suites. Examples of Abstract Test Suites are available in an annex of most ISO 191XX documents, one of the more useful is in ISO 19136. Note that this guidance may be more abstract than needed in an OGC® Implementation Standard.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. A.1.1	Conformance level 1</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/test/case/id</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm that the IUT satisfies all applicable requirements for conformance level 1.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Functional testing performed in an automated and/or manual manner. Verify the behaviour of the IUT for the following operations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>GetCapabilities (mandatory)</p>
+</li>
+<li>
+<p>DescribeRecord (mandatory)</p>
+</li>
+<li>
+<p>GetRecords (mandatory)</p>
+</li>
+<li>
+<p>GetRecordById (mandatory)</p>
+</li>
+<li>
+<p>GetRepositoryItem (mandatory)</p>
+</li>
+<li>
+<p>GetDomain (optional)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 07-110: cl. 2.2</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capability</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. A.1.2	Test case for validity of XML response entity</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse" class="bare">http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The XML response entity is valid.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validate content of response entity against corresponding element declaration.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 07-006r1: cl. 10.2.5.1, p. 118</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capability</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. A.2.1	Conformance level 2</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/test/case/id</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm that the IUT satisfies all applicable requirements for conformance level 1.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Functional testing performed in an automated and/or manual manner. Verify the behaviour of the IUT for the following operations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>GetCapabilities (mandatory)</p>
+</li>
+<li>
+<p>DescribeRecord (mandatory)</p>
+</li>
+<li>
+<p>GetRecords (mandatory)</p>
+</li>
+<li>
+<p>GetRecordById (mandatory)</p>
+</li>
+<li>
+<p>GetRepositoryItem (mandatory)</p>
+</li>
+<li>
+<p>GetDomain (optional)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 07-110: cl. 2.2</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capability</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. A.2.2	Test case for validity of XML response entity</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse" class="bare">http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The XML response entity is valid.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validate content of response entity against corresponding element declaration.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 07-006r1: cl. 10.2.5.1, p. 118</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capability</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="XMLSchemaDocuments"><a class="anchor" href="#XMLSchemaDocuments"></a>Appendix B: XML Schema Documents</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>XML Schema Documents may be relevant to an Engineering Report.</p>
+</div>
+<div class="paragraph">
+<p>The term “XML schema“ means all the XML schema parts having the same XML namespace, usually separated into multiple XML Schema Document files (with the file type “.xsd“. The XML schema parts in one XML namespace are usually separated into multiple XML Schema Documents to ease human understanding.</p>
+</div>
+<div class="paragraph">
+<p>In addition to this document, this report includes several XML Schema Documents. These XML Schema Documents are bundled in a zip file with the present document.</p>
+</div>
+<div class="paragraph">
+<p>The TBD abilities now specified in this document use TBD specified XML Schema Documents included in the zip file with this document. These XML Schema Documents combine the XML schema fragments listed in various subclauses of this document, eliminating duplications.</p>
+</div>
+<div class="paragraph">
+<p>These XML Schema Documents roughly match the TBD UML packages described in Annex B, and are named:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TBD.xsd
+TBD.xsd</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>These XML Schema Documents use and build on the OWS common XML Schema Documents specified [OGC 06-121r3], named:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ows19115subset.xsd
+owsCommon.xsd
+owsDataIdentification.xsd
+owsExceptionReport.xsd
+owsGetCapabilities.xsd
+owsOperationsMetadata.xsd
+owsServiceIdentification.xsd
+owsServiceProvider.xsd</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All these XML Schema Documents contain documentation of the meaning of each element and attribute, and this documentation shall be considered normative as specified in Subclause 11.6.3 of [OGC 06-121r9].</p>
+</div>
+<div class="listingblock">
+<div class="title">GetCapabilities.xsd</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml">&lt;ows:Operation name="GetCapabilities"&gt;
+  &lt;ows:DCP&gt;
+    &lt;ows:HTTP&gt;
+      &lt;ows:Post xlink:href="http://www.opengis.net/?"&gt;
+        &lt;ows:Constraint name="PostEncoding"&gt;
+          &lt;allowedValues&gt;
+            &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+          &lt;/ows:AllowedValues&gt;
+        &lt;/ows:Constraint&gt;
+      &lt;/ows:Post&gt;
+    &lt;/ows:HTTP&gt;
+  &lt;/ows:DCP&gt;
+&lt;/ows:Operation&gt;
+&lt;ows:Operation name="GetTile"&gt;
+  &lt;ows:DCP&gt;
+    &lt;ows:HTTP&gt;
+      &lt;ows:Post xlink:href="http://www.opengis.net/?"&gt;
+        &lt;ows:Constraint name="PostEncoding"&gt;
+          &lt;ows:AllowedValues&gt;
+            &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+          &lt;/ows:AllowedValues&gt;
+        &lt;/ows:Constraint&gt;
+      &lt;/ows:Post&gt;
+    &lt;/ows:HTTP&gt;
+  &lt;/ows:DCP&gt;
+&lt;/ows:Operation&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="UMLModel"><a class="anchor" href="#UMLModel"></a>Appendix C: UML model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A UML model may be relevant to an Engineering Report. This template thus includes this annex as the place for recording this UML model.</p>
+</div>
+<div class="paragraph">
+<p>Instructions and guidelines on the usage of UML models are provided in OGC document <a href="https://portal.opengeospatial.org/files/?artifact_id=38867"> OGC-121r9</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="RevisionHistory"><a class="anchor" href="#RevisionHistory"></a>Appendix D: Revision History</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title">Example History (Delete this note).</div>
+<div class="paragraph">
+<p>replace below entries as needed</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 90%;">
+<caption class="title">Table 5. Revision History</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Date</th>
+<th class="tableblock halign-left valign-top">Editor</th>
+<th class="tableblock halign-left valign-top">Release</th>
+<th class="tableblock halign-left valign-top">Primary clauses modified</th>
+<th class="tableblock halign-left valign-top">Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">June 15, 2016</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I. Simonis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">initial version</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 22, 2016</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I. Simonis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">comments integrate</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">September 7, 2016</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S. Simmons</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">various</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">preparation for publication</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">March 23, 2017</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I. Simonis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">template simplified</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">January 18, 2018</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S. Serich</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">additional guidance to Editors; clean up headings in appendices</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Bibliography"><a class="anchor" href="#Bibliography"></a>Appendix E: Bibliography</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>bibliography::[]</p>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-07-20 16:03:25 Paris, Madrid (heure dÆÚtÚ)
+Last updated 2018-07-20 16:09:52 Paris, Madrid (heure dÆÚtÚ)
 </div>
 </div>
 </body>
