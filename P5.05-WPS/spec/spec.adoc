@@ -69,10 +69,9 @@
 :bibtex-file: resources/bibtex-file.bib
 :bibtex-style: resources/lncs.csl
 
-image::https://github.com/DGIWG/P5-Geospatial-Web-Services-Program/blob/master/P5.05-WPS/images/DGIWG_logo.png[DGIWG Logo, 200, 200]
+image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200]
 
-= {docReference}
-//= {title}
+= {docReference}{title}
 _Template for STD, TCR, and HBK documents_
 
 [#front_page,reftext='{table-caption} {counter:table-num}']
