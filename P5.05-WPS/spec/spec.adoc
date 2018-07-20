@@ -109,4 +109,34 @@ include::03_Normative_Reference.adoc[]
 
 include::04_Terms_and_Definitions.adoc[]
 
+// *****************************************************************************
+// Editors organize included-file inputs as appropriate starting here.
+// *****************************************************************************
+
 include::05_Subject_Matter_Content.adoc[]
+
+// you may add any number of chapters as required here
+
+// *****************************************************************************
+// Editors add or remove annexes as necessary.
+// *****************************************************************************
+
+include::annex-a.adoc[]
+
+include::annex-b.adoc[]
+
+include::annex-c.adoc[]
+
+// *****************************************************************************
+// Revision History should be the last annex before the Bibliography.
+// Bibliography should be the last annex.
+// *****************************************************************************
+
+include::annex-history.adoc[]
+
+include::annex-bibliography.adoc[]
+
+// *****************************************************************************
+// Editors please proceed to edit the content of 2-references.adoc[],
+// 3-terms.adoc[], etc. for each of the included files.
+// *****************************************************************************
