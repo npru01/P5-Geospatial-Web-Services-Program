@@ -114,6 +114,7 @@ include::04_Terms_and_Definitions.adoc[]
 // *****************************************************************************
 
 include::05_Subject_Matter_Content.adoc[]
+
 include::06_Subject_Matter_Content.adoc[]
 
 // you may add any number of chapters as required here
