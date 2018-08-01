@@ -1,26 +1,47 @@
-== Executive Summary
-(The inclusion of an Executive Summary is the discretion of the author(s)).
+[.lead]
+*Table of Contents*
+
+_(Mandatory)_
+
+[.lead]
+*List of Figures*
+
+_(as applicable)_
+
+[.lead]
+*List of Tables*
+
+_(as applicable)_
+
+[.lead]
+*Executive Summary*
+
+_(The inclusion of an Executive Summary is the discretion of the author(s))._
 
 
+[.lead]
+*Acknowledgement*
 
-== Acknowledgement
-(The acknowledgement clause is optional. Acknowledgements are listed after the Executive Summary, if present, and precede the table of contents)
+_(The acknowledgement clause is optional. Acknowledgements are listed after the Executive Summary, if present, and precede the table of contents)_
 
-(Clauses i-iv are optional, and not mandated for approval of issue, however assist in the management of the document)
+_(Clauses i-iv are optional, and not mandated for approval of issue, however assist in the management of the document)_
 
-=== i.Contributing participants
+*i.Contributing participants*
 
 [#status_codes,reftext='{table-caption} {counter:table-num}']
-[cols="15,85",options="header"]
+[cols="12,205",options="header"]
 !===
 |Nation |Parent organization
 |`FRA` | National Institute of Geographic and Forest Information
+| `XXX` |  Xxxxx
 !===
 
 
 
-=== ii.Document points of contact
+*ii.Document points of contact*
+
 *For internal documents use:*
+
 All questions regarding this document shall be directed to the editor or the contributors:
 
 [#poc,reftext='{table-caption} {counter:table-num}']
@@ -28,6 +49,7 @@ All questions regarding this document shall be directed to the editor or the con
 !===
 |Person |Organization | Email
 |Dimitri Sarafinof| National Institute of Geographic and Forest Information | Dimitri.Sarafinof@ign.fr
+| Xxxx Xxxx  | Xxxxx  | xxx.yyyy@zzzz.com
 !===
 
 
@@ -36,10 +58,10 @@ For Document approved for public release use:
 All questions regarding this document shall be directed to the secretariat@dgiwg.org
 NOTE: All personal information will be removed when an internal document is made public. This includes names and personal e-mail accounts.
 
-=== iii.Revision history
+*iii.Revision history*
 
 [#revision_history,reftext='{table-caption} {counter:table-num}']
-[cols="15,85,85,85",options="header"]
+[cols="25,85,85,85",options="header"]
 !===
 |Date |Edition number |Primary clauses modified | Description
 |`2018.07.18` |0.1 | clauses 0.1.1 | first draft of spec template.
@@ -47,4 +69,4 @@ NOTE: All personal information will be removed when an internal document is made
 
 
 
-=== iv.	Future work
+*iv.	Future work*

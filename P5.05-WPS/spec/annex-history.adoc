@@ -13,5 +13,5 @@ replace below entries as needed
 |====================
 |Date |Editor |Release | Primary clauses modified |Descriptions
 |July 18, 2018 |D. Sarafinof | .1 |all |initial version
-|July 24, 2016 |WSTP | .2 |all |comments integrate
+|July 24, 2016 |WSTP | .2 |all |comments integrattion
 |====================
