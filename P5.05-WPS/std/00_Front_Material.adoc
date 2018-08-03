@@ -29,7 +29,7 @@ _(Clauses i-iv are optional, and not mandated for approval of issue, however ass
 *i.Contributing participants*
 
 [#status_codes,reftext='{table-caption} {counter:table-num}']
-[cols="12,205",options="header"]
+[cols="30,205",options="header"]
 !===
 |Nation |Parent organization
 |`France` | Institut National de l'Information Géographique et Forestière (IGN)
@@ -64,11 +64,11 @@ NOTE: All personal information will be removed when an internal document is made
 *iii.Revision history*
 
 [#revision_history,reftext='{table-caption} {counter:table-num}']
-[cols="25,85,85,85",options="header"]
+[cols="40,50,85,85",options="header"]
 !===
 |Date |Edition number |Primary clauses modified | Description
 |`2018.07.18` |0.1 | clauses 0.1.1 | first draft of spec template.
-||`2018.08.03` |0.2 | Front page | revised draft of spec template.   |   |   |   |
+|`2018.08.03` |0.2 | Front page | revised draft of spec template.
 !===
 
 
