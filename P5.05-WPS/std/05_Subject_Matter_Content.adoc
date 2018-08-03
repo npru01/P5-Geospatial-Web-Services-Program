@@ -1,4 +1,4 @@
-== WPS 2.0 presentation
+== WPS 2.0 presentation (informative)
 
 === Subchapter 1
 

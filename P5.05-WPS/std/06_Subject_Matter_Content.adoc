@@ -1,5 +1,7 @@
-== Subject matter content
+== DGIWG WPS basic (Normative)
 
 === Subchapter 1
+
+Requirement 1: A DGIWG Basic WPS server shall implement the OGC 14-065 Basic WPS service profile conformance class.
 
 === Subchapter 2
