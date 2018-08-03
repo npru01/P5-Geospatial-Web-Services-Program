@@ -32,8 +32,11 @@ _(Clauses i-iv are optional, and not mandated for approval of issue, however ass
 [cols="12,205",options="header"]
 !===
 |Nation |Parent organization
-|`FRA` | National Institute of Geographic and Forest Information
-| `XXX` |  Xxxxx
+|`France` | Institut National de l'Information Géographique et Forestière (IGN)
+| `Germany` | Bundeswehr Geoinformation Centre (BGIC)
+| `United States` |  National Geospatial-Intelligence Agency (NGA)
+| `United Kingdom` |  Defence Science and Technology Laboratory (DSTL)
+| `Nation` |  Organisation
 !===
 
 
@@ -65,6 +68,7 @@ NOTE: All personal information will be removed when an internal document is made
 !===
 |Date |Edition number |Primary clauses modified | Description
 |`2018.07.18` |0.1 | clauses 0.1.1 | first draft of spec template.
+||`2018.08.03` |0.2 | Front page | revised draft of spec template.   |   |   |   |
 !===
 
 

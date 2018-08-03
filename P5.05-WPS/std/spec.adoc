@@ -78,9 +78,14 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 [cols="25,85"]
 !===
 |Document type:	|Standard, Technical Report, or Handbook
+// subtype and profile of may be used for Standard
+|Document subtype:	|Implementation profile
+|Profile of:	|OGC or ISO standard reference
 |Document date:	|dd month yyyy
-|Edition :	|x.x.x
-// The x.x.x. designation is not used for draft documents. See DGIWG – 920 for additional details._
+// The x.x.x. designation is not used for draft documents. See DGIWG – 920 for additional details.
+|Edition number:	|x.x.x
+// Superseedes shall be used for document resvision (version >1.0)
+|Supersedes: 	|DGIWG – XXX Ed. x.x.x, Title, dated 'day' 'month' 'year'
 |Responsible Party: 	|DGIWG
 |Editor : |
 // The ‘Editor’ field is optional. The field is not used for documents that are cleared for public release._
