@@ -11,7 +11,7 @@
 // Insert respective document title(DGIWG title)
 // The title here should match the title on the first page.
 // *****************************************************************************
-:title: DGIWG Web Processing Profile
+:title: Defence Profile of OGC's Web Processing Service 2.0
 
 // *****************************************************************************
 // Document Reference, with format "DGIWG - XXX" (e.g., DGIW - 112 ).
@@ -30,13 +30,13 @@
 // Names of all editors, comma-separated (e.g., John Doe, Sue Smith)
 // *****************************************************************************
 
-:editor: Name(s)
+:editor: Dimitri Sarafinof
 
 // *****************************************************************************
 // Proposed DGIWG panels for review (e.g. P5 - WSTP)
 // *****************************************************************************
 
-:workingGroup: Panel(s) for Review: Name(s)
+:workingGroup: P5.05
 
 // *****************************************************************************
 // End of Editor's front-matter elements.
@@ -46,7 +46,7 @@
 // *****************************************************************************
 // Editors please do not alter the administrative front matter below.
 // *****************************************************************************
-:category: DGIWG STD, TCR, or HBK
+:category: DGIWG STD
 :publicationDate: DD-MM-YYYY
 :approvalDate: DD-MM-YYYY
 :referenceURLID: ID
@@ -80,14 +80,14 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 |Document type:	|Standard
 // subtype and profile of may be used for Standard
 |Document subtype:	|Implementation profile
-|Profile of:	|OGC or ISO standard reference
+|Profile of:	|OGC WPS 2.0 (OGC 14-065)
 |Document date:	|dd month yyyy
 // The x.x.x. designation is not used for draft documents. See DGIWG – 920 for additional details.
 |Edition number:	|x.x.x
 // Superseedes shall be used for document resvision (version >1.0)
 |Supersedes: 	|DGIWG – XXX Ed. x.x.x, Title, dated 'day' 'month' 'year'
 |Responsible Party: 	|DGIWG
-|Editor : |
+|Editor : | {editor}
 // The ‘Editor’ field is optional. The field is not used for documents that are cleared for public release._
 |Audience: 	|DGIWG participants and associates
 |Abstract: 	|Template to create STD, TCR, and HBK documents

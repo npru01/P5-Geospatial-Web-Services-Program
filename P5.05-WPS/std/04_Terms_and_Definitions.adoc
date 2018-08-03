@@ -2,5 +2,16 @@
 _(As applicable)_
 
 === Definitions
+For the purposes of this document, terms and definitions found in WPS 2.0 (<<Ref-1>>) apply.
 
 === Abrevations
+[#Abr,reftext='{table-caption} {counter:table-num}']
+[cols="30,170"]
+
+!===
+| *BBox* | Bounding Box
+| *CRS* | Coordinate Reference System
+| *HTTP* | Hypertext Transfer Protocol
+| *WPS* | Web Processing Service
+| *XML* |  Extensible Markup Language |
+!===

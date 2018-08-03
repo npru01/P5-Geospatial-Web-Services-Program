@@ -1,2 +1,26 @@
 == Introduction
 _(Mandatory. The introduction is located on a separated page  preceding the ‘Scope’ statement. The introduction is not numbered.)_
+
+A Web Processing Service (WPS) executes processes
+
+The OpenGIS Web Processing Service 2.0 offers five operations:
+
+* GetCapabilities (mandatory): returns service metadata,
+* DescribeProcess (mandatory): returns the description of a specific process,
+* Execute (mandatory): creates a job to run a specific process,
+* GetStatus: erturns status infomration about a processing job,
+* GetResult: returns the result of a processing job,
+* Dismiss: allows a user to cancel a job.
+
+The WPS specification defines five conformance classe:
+
+* Basic WPS service profile
+* Synchronous WPS
+* Asynchronous WPS
+* WPS process model encoding
+* Dismiss extension
+
+The specification also defines a profile called basic WPS which defines a minimal WPS inmplementation with following caracteristics:
+
+* dezfez
+* fefzedz
