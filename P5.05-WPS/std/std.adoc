@@ -11,7 +11,7 @@
 // Insert respective document title(DGIWG title)
 // The title here should match the title on the first page.
 // *****************************************************************************
-:title: Template for STD, TCR, and HBK documents
+:title: DGIWG Web Processing Profile
 
 // *****************************************************************************
 // Document Reference, with format "DGIWG - XXX" (e.g., DGIW - 112 ).
@@ -77,7 +77,7 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 [#front_page,reftext='{table-caption} {counter:table-num}']
 [cols="25,85"]
 !===
-|Document type:	|Standard, Technical Report, or Handbook
+|Document type:	|Standard
 // subtype and profile of may be used for Standard
 |Document subtype:	|Implementation profile
 |Profile of:	|OGC or ISO standard reference
