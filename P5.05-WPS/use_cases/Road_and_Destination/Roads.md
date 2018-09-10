@@ -36,3 +36,15 @@
 
 ><b>nearestRoads</b>
 >>_Indicates roads near to present location_
+
+><b>Condition</b>
+>>_What is the condition of the road. 'Intact / Not intact'_
+
+><b>Surface</b>
+>>_Indicates the surface material. 'Hard / Loose'_
+
+><b>Lanes</b>
+>>_Indicates the number of lanes '1,2,3,4.....'_
+
+><b>Climate</b>
+>>_Indicates the climatic conditions. 'all weather / fair weather'_
