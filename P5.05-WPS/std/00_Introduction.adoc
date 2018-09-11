@@ -8,7 +8,7 @@ The OpenGIS Web Processing Service 2.0 offers five operations:
 * GetCapabilities (mandatory): returns service metadata,
 * DescribeProcess (mandatory): returns the description of a specific process,
 * Execute (mandatory): creates a job to run a specific process,
-* GetStatus: erturns status infomration about a processing job,
+* GetStatus: returns status information about a processing job,
 * GetResult: returns the result of a processing job,
 * Dismiss: allows a user to cancel a job.
 
