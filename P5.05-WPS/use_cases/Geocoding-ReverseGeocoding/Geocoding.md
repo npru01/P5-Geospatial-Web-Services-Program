@@ -2,17 +2,18 @@
 
 Request types
  - by POI
+ 
  [source,xml]
 ----
 <Request requestID="1" version="1.2" methodName="LocationUtilityService">
-       <GeocodeRequest returnFreeForm="false">
-         <Address countryCode="PositionOfInterest">
-                <freeFormAddress>rennes</freeFormAddress>
-         </Address>
-       </GeocodeRequest>
-   </Request>
+  <GeocodeRequest returnFreeForm="false">
+    <Address countryCode="PositionOfInterest">
+      <freeFormAddress>rennes</freeFormAddress>
+    </Address>
+  </GeocodeRequest>
+</Request>
 ----
-<1> The section title is required.
+<1> Sample POI request .
 
  
  - by administrative unit
