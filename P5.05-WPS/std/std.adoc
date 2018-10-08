@@ -90,7 +90,7 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 |Editor : | {editor}
 // The ‘Editor’ field is optional. The field is not used for documents that are cleared for public release._
 |Audience: 	|DGIWG participants and associates
-|Abstract: 	|Template to create STD, TCR, and HBK documents
+|Abstract: 	|This document defines specific DGIWG requirements, recommendations and guidelines for implementations of the OGC Web Processing Service standards.
 |Copyright:	|(C) Copyright DGIWG, some rights reserved  -  (CC) (By:) Attribution
 You are free:
 -	to copy, distribute, display, and perform/execute the work
