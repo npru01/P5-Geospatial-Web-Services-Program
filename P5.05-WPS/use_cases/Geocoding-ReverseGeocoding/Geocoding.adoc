@@ -1,8 +1,10 @@
 # Parameters for Geocoding process - _Draft_
 
-Request types
+= Request types
 
- * by POI
+Some more info here https://geoservices.ign.fr/documentation/geoservices/geocodage.html
+
+== _by POI_
 
 [source,xml]
 ----
@@ -16,9 +18,9 @@ Request types
 ----
 <1> Sample POI request.
 
+== _by administrative unit_
 
- * by administrative unit
-
+request
 [source,xml]
 ----
  <Request requestID="1" version="1.2" methodName="LocationUtilityService">
@@ -31,8 +33,7 @@ Request types
 ----
 <2> Sample by Admin Unit request.
 
-
- * by adress
+== _by adress_
 
 [source,xml]
 ----
@@ -64,5 +65,7 @@ Request types
 ----
 <4> Sample structured adress request
 
- * other filter criteria
- * by casdastral parcel
+== _other filter criteria_
+
+
+== _by casdastral parcel_
