@@ -1,11 +1,9 @@
-# Parameters for Geocoding process - _Draft_
-
-= Request types
+= Parameters for Geocoding process - _Draft_
 
 Some more info here https://geoservices.ign.fr/documentation/geoservices/geocodage.html
 
 == _by POI_
-
+*request*
 [source,xml]
 ----
 <Request requestID="1" version="1.2" methodName="LocationUtilityService">
@@ -18,9 +16,12 @@ Some more info here https://geoservices.ign.fr/documentation/geoservices/geocoda
 ----
 <1> Sample POI request.
 
+*response*
+
+
 == _by administrative unit_
 
-request
+*request*
 [source,xml]
 ----
  <Request requestID="1" version="1.2" methodName="LocationUtilityService">
@@ -33,8 +34,11 @@ request
 ----
 <2> Sample by Admin Unit request.
 
-== _by adress_
+*response*
 
+
+== _by adress_
+*request*
 [source,xml]
 ----
  <RequestHeader srsName="epsg:4326"/>
@@ -47,7 +51,7 @@ request
    </Request>
 ----
 <3> Sample non structured adress request
-
+*request*
 [source,xml]
 ----
 <RequestHeader/>
