@@ -1,4 +1,4 @@
-<h2>Parameters surrounding Error Capture  ...</h2>
+<h2>Parameters for Geocoding process - <i>Draft</i></h2>
 
 ><b> * Code
 >>     * HTTP status of the response.
