@@ -8,9 +8,15 @@ The OpenGIS Web Processing Service 2.0 offers five operations:
 * GetCapabilities (mandatory): returns service metadata,
 * DescribeProcess (mandatory): returns the description of a specific process,
 * Execute (mandatory): creates a job to run a specific process,
+<<<<<<< HEAD
 * GetStatus(conditional): returns status infomration about a processing job,
 * GetResult(conditional): returns the result of a processing job,
 * Dismiss (extension): allows a user to cancel a job.
+=======
+* GetStatus: returns status information about a processing job,
+* GetResult: returns the result of a processing job,
+* Dismiss: allows a user to cancel a job.
+>>>>>>> 2323dcd68f2f4fd30eb61b61976ccc1ebf62205b
 
 The WPS specification defines five conformance classe:
 
