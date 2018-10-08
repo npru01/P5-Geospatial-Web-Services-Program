@@ -1,4 +1,4 @@
-<h2>Parameters for Geocoding process - <i>Draft</i></h2>
+*Parameters for Geocoding process - _Draft_*
 
 ><b> * Code
 >>     * HTTP status of the response.
