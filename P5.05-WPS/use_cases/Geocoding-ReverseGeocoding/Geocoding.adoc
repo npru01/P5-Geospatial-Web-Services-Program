@@ -1,0 +1,68 @@
+# Parameters for Geocoding process - _Draft_
+
+Request types
+
+ * by POI
+
+[source,xml]
+----
+<Request requestID="1" version="1.2" methodName="LocationUtilityService">
+  <GeocodeRequest returnFreeForm="false">
+    <Address countryCode="PositionOfInterest">
+      <freeFormAddress>rennes</freeFormAddress>
+    </Address>
+  </GeocodeRequest>
+</Request>
+----
+<1> Sample POI request.
+
+
+ * by administrative unit
+
+[source,xml]
+----
+ <Request requestID="1" version="1.2" methodName="LocationUtilityService">
+        <GeocodeRequest returnFreeForm="false">
+          <Address countryCode="Administratif">
+             <freeFormAddress>Bretagne</freeFormAddress>
+          </Address>
+        </GeocodeRequest>
+     </Request>
+----
+<2> Sample by Admin Unit request.
+
+
+ * by adress
+
+[source,xml]
+----
+ <RequestHeader srsName="epsg:4326"/>
+   <Request maximumResponses="25" methodName="GeocodeRequest" requestID="uid42" version="1.2">
+   <GeocodeRequest returnFreeForm="false">
+     <Address countryCode="StreetAddress">
+       <freeFormAddress>2 avenue Pasteur 94160 Saint-Mandé</freeFormAddress>
+     </Address>
+   </GeocodeRequest>
+   </Request>
+----
+<3> Sample non structured adress request
+
+[source,xml]
+----
+<RequestHeader/>
+    <Request requestID="1" version="1.2" methodName="LocationUtilityService">
+       <GeocodeRequest returnFreeForm="false">
+           <Address countryCode="StreetAddress">
+               <StreetAddress>
+                        <Street>1 rue Marconi</Street>
+               </StreetAddress>
+               <Place type="Municipality">Metz</Place>
+               <PostalCode>57000</PostalCode>
+           </Address>
+       </GeocodeRequest>
+    </Request>
+----
+<4> Sample structured adress request
+
+ * other filter criteria
+ * by casdastral parcel
