@@ -2,6 +2,12 @@
 
 Some more info here https://geoservices.ign.fr/documentation/geoservices/geocodage.html
 
+Implemented as an OGC OpenLS service
+
+Provides coordinates from
+ * POI /Place names
+ * adress
+ * cadastral parcel
 == _by POI_
 *request*
 
