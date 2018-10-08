@@ -51,6 +51,7 @@ Some more info here https://geoservices.ign.fr/documentation/geoservices/geocoda
    </Request>
 ----
 <3> Sample non structured adress request
+
 *request*
 [source,xml]
 ----
