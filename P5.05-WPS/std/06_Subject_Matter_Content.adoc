@@ -4,13 +4,14 @@
 
 WARNING: structure of requirement (DGIWG current style vs new OGC style), to be discussed in MANAGEMENT Team
 
-*_Requirement {counter:req}: A DGIWG Basic WPS server shall implement the OGC 14-065 Basic WPS service profile conformance class._*
+*_Requirement {counter:req}: a DGIWG Basic WPS server shall implement the OGC 14-065 Basic WPS service profile conformance class._*
 
 === Requirements for developping process profiles
 
 NOTE: description of process profiles is defined in http://docs.opengeospatial.org/is/14-065/14-065.html#32
 
 TIP: A process profile is a description of a process on an interface level. Process profiles may have different levels of abstraction and cover several aspects. On a generic level, a process profile may only refer to the provided functionality of a process, i.e. by giving a verbal or formal definition how the outputs are derived from the inputs. On a concrete level a process profile may completely define inputs and outputs including data type definitions and formats.
+Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. While this specification does not attempt to enforce or suggest any particular process profiles, it provides a mechanism to define common processing functionality within the scope of WPS, thus supporting basic process cataloguing and retrieval tasks for distributed processing infrastructures. Depending on the degree of harmonization, the definitions of process profiles may be used to foster a common understanding of widely used processing functions. However, they may also be used to harmonize the technical details of process interfaces and thus document particular interoperability arrangements between process providers and consumers.
 
 *_Requirement {counter:req}: a DGIWG process profile shall satisfy requirement from ???_*
 
