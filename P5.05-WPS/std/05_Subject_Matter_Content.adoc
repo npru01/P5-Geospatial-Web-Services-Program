@@ -1,5 +1,14 @@
 == WPS 2.0 presentation (informative)
 
-=== Subchapter 1
+=== WPS Core conceptual model
 
-=== Subchapter 2
+=== Process model
+_Description of the operation_
+
+=== Basic data model
+
+=== WPS service model and dissmiss extension
+_Description of the 6 extensions (5 from the service model + dissmiss_
+
+
+=== Bindings

@@ -19,4 +19,5 @@ _(As applicable)_
 | OGC® WPS 2.0.2 Interface Standard | OGC 14-065 | 2.0.2
 | OGC® Testbed-13: Workflows ER | OGC 17-029  | r1
 | OGC® Testbed-13: Cloud ER |  OGC 17-035 | -
+| _OGC® Testbed-14 ERs to be added here_ |  OGC 18-XXX | - 
 !===

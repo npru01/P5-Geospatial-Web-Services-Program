@@ -1,7 +1,17 @@
 == DGIWG WPS basic (Normative)
 
-=== Subchapter 1
+=== Requirements for DGIWG Basic WPS/Geoprocessing service
 
-Requirement 1: A DGIWG Basic WPS server shall implement the OGC 14-065 Basic WPS service profile conformance class.
+WARNING: structure of requirement (DGIWG current style vs new OGC style), to be discussed in MANAGEMENT Team
 
-=== Subchapter 2
+*_Requirement {counter:req}: A DGIWG Basic WPS server shall implement the OGC 14-065 Basic WPS service profile conformance class._*
+
+=== Requirements for developping process profiles
+
+NOTE: description of process profiles is defined in http://docs.opengeospatial.org/is/14-065/14-065.html#32
+
+TIP: A process profile is a description of a process on an interface level. Process profiles may have different levels of abstraction and cover several aspects. On a generic level, a process profile may only refer to the provided functionality of a process, i.e. by giving a verbal or formal definition how the outputs are derived from the inputs. On a concrete level a process profile may completely define inputs and outputs including data type definitions and formats.
+
+*_Requirement {counter:req}: a DGIWG process profile shall satisfy requirement from ???_*
+
+*_Requirement {counter:req}: a DGIWG process profile shall follow template ... to document WPS process profiles._*
