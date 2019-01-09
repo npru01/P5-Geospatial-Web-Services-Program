@@ -14,5 +14,5 @@ Current view of the DGIWG Web Services profiles:
 
 Running projects are:
 -  P5.03 - GeoPackage
-- [P5.05 - WPS](/tree/master/P5.05-WPS)
+- [P5.05 - WPS](P5.05-WPS)
 - [P5.06 - Web Services Test Program](/tree/master/P5.06-WebServicesTestProgram)
