@@ -36,16 +36,19 @@
 <li><a href="#_abrevations">5.2. Abrevations</a></li>
 </ul>
 </li>
-<li><a href="#_wps_2_0_presentation">6. WPS 2.0 presentation</a>
+<li><a href="#_wps_2_0_presentation_informative">6. WPS 2.0 presentation (informative)</a>
 <ul class="sectlevel2">
-<li><a href="#_subchapter_1">6.1. Subchapter 1</a></li>
-<li><a href="#_subchapter_2">6.2. Subchapter 2</a></li>
+<li><a href="#_wps_core_conceptual_model">6.1. WPS Core conceptual model</a></li>
+<li><a href="#_process_model">6.2. Process model</a></li>
+<li><a href="#_basic_data_model">6.3. Basic data model</a></li>
+<li><a href="#_wps_service_model_and_dissmiss_extension">6.4. WPS service model and dissmiss extension</a></li>
+<li><a href="#_bindings">6.5. Bindings</a></li>
 </ul>
 </li>
-<li><a href="#_subject_matter_content">7. Subject matter content</a>
+<li><a href="#_dgiwg_wps_basic_normative">7. DGIWG WPS basic (Normative)</a>
 <ul class="sectlevel2">
-<li><a href="#_subchapter_1_2">7.1. Subchapter 1</a></li>
-<li><a href="#_subchapter_2_2">7.2. Subchapter 2</a></li>
+<li><a href="#_requirements_for_dgiwg_basic_wpsgeoprocessing_service">7.1. Requirements for DGIWG Basic WPS/Geoprocessing service</a></li>
+<li><a href="#_requirements_for_developping_process_profiles">7.2. Requirements for developping process profiles</a></li>
 </ul>
 </li>
 </ul>
@@ -115,7 +118,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Abstract:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Template to create STD, TCR, and HBK documents</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This document defines specific DGIWG requirements, recommendations and guidelines for implementations of the OGC Web Processing Service standards.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Copyright:</p></td>
@@ -169,7 +172,7 @@ This is a human-readable summary of the Legal Code (the full license is availabl
 <div class="paragraph">
 <p><strong>i.Contributing participants</strong></p>
 </div>
-<table id="status_codes" class="tableblock frame-all grid-rows stretch">
+<table id="status_codes" class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 12.7659%;">
 <col style="width: 87.2341%;">
@@ -278,35 +281,57 @@ NOTE: All personal information will be removed when an internal document is made
 <p><em>(Mandatory. The introduction is located on a separated page  preceding the ‘Scope’ statement. The introduction is not numbered.)</em></p>
 </div>
 <div class="paragraph">
-<p>A Web Processing Service (WPS) executes processes</p>
+<p>A Web Processing Service (WPS) executes processes based on geospatial data.</p>
 </div>
 <div class="paragraph">
-<p>The OpenGIS Web Processing Service 2.0 offers five operations:</p>
+<p>This version 2.0 defines (<em>from OGC 14-065</em>)</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>GetCapabilities (mandatory): returns service metadata,</p>
+<p>a Core conceptual model that may be sed to specify a WPS in different architectures such as REST or SOAP,</p>
 </li>
 <li>
-<p>DescribeProcess (mandatory): returns the description of a specific process,</p>
+<p>a process model to support the description and discovery of processes on the web,</p>
 </li>
 <li>
-<p>Execute (mandatory): creates a job to run a specific process,</p>
+<p>a basic data model that supports arbitrary (standard or non-standard) data formats for inputs and outputs,</p>
 </li>
 <li>
-<p>GetStatus: erturns status infomration about a processing job,</p>
+<p>a WPS service model and encoding based on OGC baseline standards, and</p>
 </li>
 <li>
-<p>GetResult: returns the result of a processing job,</p>
-</li>
-<li>
-<p>Dismiss: allows a user to cancel a job.</p>
+<p>a Dismiss extension to allow clients to terminate asynchronous processing jobs.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The WPS specification defines five conformance classe:</p>
+<p>The WPS service model defines five operations, the Dismiss operation (allowing a user to cancel a job) being defined as an extension to it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>GetCapabilities</em> (mandatory): returns service metadata,</p>
+</li>
+<li>
+<p><em>DescribeProcess</em> (mandatory): returns the description of a specific process,</p>
+</li>
+<li>
+<p><em>Execute</em> (mandatory): creates a job to run a specific process,</p>
+</li>
+<li>
+<p><em>GetStatus</em>: returns status information about a processing job,</p>
+</li>
+<li>
+<p><em>GetResult</em>: returns the result of a processing job,</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Two bindings are now defined for these operations : HTTP/POST+XML and HTTP/GET+KVP (excepted for the <em>Execute</em> operation)</p>
+</div>
+<div class="paragraph">
+<p>Conformity to the standard is organized with five conformance classes:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -328,17 +353,7 @@ NOTE: All personal information will be removed when an internal document is made
 </ul>
 </div>
 <div class="paragraph">
-<p>The specification also defines a profile called basic WPS which defines a minimal WPS inmplementation with following caracteristics:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>dezfez</p>
-</li>
-<li>
-<p>fefzedz</p>
-</li>
-</ul>
+<p>The "<em>basic WPS service profile</em>"  defines a minimal WPS implementation that comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.</p>
 </div>
 </div>
 </div>
@@ -477,6 +492,11 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OGC 17-035</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>OGC® Testbed-14 ERs to be added here</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 18-XXX</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -528,28 +548,88 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_wps_2_0_presentation"><a class="anchor" href="#_wps_2_0_presentation"></a>6. WPS 2.0 presentation</h2>
+<h2 id="_wps_2_0_presentation_informative"><a class="anchor" href="#_wps_2_0_presentation_informative"></a>6. WPS 2.0 presentation (informative)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_subchapter_1"><a class="anchor" href="#_subchapter_1"></a>6.1. Subchapter 1</h3>
+<h3 id="_wps_core_conceptual_model"><a class="anchor" href="#_wps_core_conceptual_model"></a>6.1. WPS Core conceptual model</h3>
 
 </div>
 <div class="sect2">
-<h3 id="_subchapter_2"><a class="anchor" href="#_subchapter_2"></a>6.2. Subchapter 2</h3>
+<h3 id="_process_model"><a class="anchor" href="#_process_model"></a>6.2. Process model</h3>
+<div class="paragraph">
+<p><em>Description of the operation</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_basic_data_model"><a class="anchor" href="#_basic_data_model"></a>6.3. Basic data model</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_wps_service_model_and_dissmiss_extension"><a class="anchor" href="#_wps_service_model_and_dissmiss_extension"></a>6.4. WPS service model and dissmiss extension</h3>
+<div class="paragraph">
+<p><em>Description of the 6 extensions (5 from the service model + dissmiss</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bindings"><a class="anchor" href="#_bindings"></a>6.5. Bindings</h3>
 
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_subject_matter_content"><a class="anchor" href="#_subject_matter_content"></a>7. Subject matter content</h2>
+<h2 id="_dgiwg_wps_basic_normative"><a class="anchor" href="#_dgiwg_wps_basic_normative"></a>7. DGIWG WPS basic (Normative)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_subchapter_1_2"><a class="anchor" href="#_subchapter_1_2"></a>7.1. Subchapter 1</h3>
-
+<h3 id="_requirements_for_dgiwg_basic_wpsgeoprocessing_service"><a class="anchor" href="#_requirements_for_dgiwg_basic_wpsgeoprocessing_service"></a>7.1. Requirements for DGIWG Basic WPS/Geoprocessing service</h3>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+structure of requirement (DGIWG current style vs new OGC style), to be discussed in MANAGEMENT Team
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong><em>Requirement 1: a DGIWG Basic WPS server shall implement the OGC 14-065 Basic WPS service profile conformance class.</em></strong></p>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_subchapter_2_2"><a class="anchor" href="#_subchapter_2_2"></a>7.2. Subchapter 2</h3>
-
+<h3 id="_requirements_for_developping_process_profiles"><a class="anchor" href="#_requirements_for_developping_process_profiles"></a>7.2. Requirements for developping process profiles</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+description of process profiles is defined in <a href="http://docs.opengeospatial.org/is/14-065/14-065.html#32" class="bare">http://docs.opengeospatial.org/is/14-065/14-065.html#32</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+A process profile is a description of a process on an interface level. Process profiles may have different levels of abstraction and cover several aspects. On a generic level, a process profile may only refer to the provided functionality of a process, i.e. by giving a verbal or formal definition how the outputs are derived from the inputs. On a concrete level a process profile may completely define inputs and outputs including data type definitions and formats.
+Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. While this specification does not attempt to enforce or suggest any particular process profiles, it provides a mechanism to define common processing functionality within the scope of WPS, thus supporting basic process cataloguing and retrieval tasks for distributed processing infrastructures. Depending on the degree of harmonization, the definitions of process profiles may be used to foster a common understanding of widely used processing functions. However, they may also be used to harmonize the technical details of process interfaces and thus document particular interoperability arrangements between process providers and consumers.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong><em>Requirement 2: a DGIWG process profile shall satisfy requirement from ???</em></strong></p>
+</div>
+<div class="paragraph">
+<p><strong><em>Requirement 3: a DGIWG process profile shall follow template &#8230;&#8203; to document WPS process profiles.</em></strong></p>
+</div>
 </div>
 </div>
 </div>
@@ -878,7 +958,7 @@ owsServiceProvider.xsd</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-03 16:34:11 Paris, Madrid (heure dÆÚtÚ)
+Last updated 2018-08-03 17:24:03 Paris, Madrid (heure dÆÚtÚ)
 </div>
 </div>
 </body>
