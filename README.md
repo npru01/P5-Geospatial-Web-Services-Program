@@ -19,3 +19,8 @@ Web Services team currently works on:
 -  P5.03 - GeoPackage
 - [P5.05 - WPS](P5.05-WPS)
 - [P5.06 - Web Services Test Program](P5.06-WebServicesTestProgram)
+
+Programm of work
+---------------------
+Development cycle for DGIWG web services profiles
+![Dvpt_Cycle](./_figures/Dvpt_Cycle.png)
