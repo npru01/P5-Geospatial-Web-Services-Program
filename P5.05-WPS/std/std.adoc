@@ -120,9 +120,9 @@ include::04_Terms_and_Definitions.adoc[]
 // Editors organize included-file inputs as appropriate starting here.
 // *****************************************************************************
 
-include::05_Subject_Matter_Content.adoc[]
+include::05_WPS2.0_presentation.adoc[]
 
-include::06_Subject_Matter_Content.adoc[]
+include::06_DGIWG_Basic_WPS.adoc[]
 
 // you may add any number of chapters as required here
 
