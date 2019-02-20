@@ -17,6 +17,8 @@ NOTE: Basic WPS conformance class comprises the synchronous and asynchronous exe
 .GetCapabilities reponse document UML class diagram (source <<Ref-1>>)
 image::./images/Capabilities.png[WPS_Capabilities,align=center]
 
+*_from OWS-Common 1.1_*
+
 [#get_cap_serviceID,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
 .GetCapabilities response elements - ServiceIdentification
@@ -32,24 +34,7 @@ image::./images/Capabilities.png[WPS_Capabilities,align=center]
 |accessConstraints | Access constraints that should be observed to assure the protection of privacy or intellectual property, and any other restrictions on retrieving or using data from or otherwise using this server. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no constraints are imposed | Zero or more (optional) | ?
 !===
 
-[#get_cap_OperationsMetadata,reftext='{table-caption} {counter:table-num}']
-[cols="4",options="header"]
-.GetCapabilities response elements - OperationsMetadata
-!===
-|Names | Definition  | Multiplicity and use | DGIWG
-|operation | Metadata for one operation that this server interface implements | One or more (mandatory) One for each implemented operation | One (mandatory) | ?
-|parameter | Parameter valid domain that applies to one or more operations which this server implements. | Zero or more (optional) One for each such parameter with limited domain | ?
-|constraint | Constraint on valid domain of a nonparameter quantity that applies to this server. | Zero or more (optional) One for each such quantity with limited domain | ?
-|extendedCapabilities | Metadata about server and software additional abilities | Zero or one (optional) Included when server provides additional capabilities | ?
-!===
-
-NOTE: The contents of the CI_ResponsibleParty class are modified to omit the optional organizationName attribute
-in CI_ContactInfo, since the ProviderName contains this information. The mandatory ―role‖ attribute in the
-CI_ResponsibleParty class is made optional, since no clear use of this information is known in the
-ServiceProvider section. Since all contents of the ServiceContact are now optional, the ServiceContact is now
-made optional.
-
-[#get_cap_serviceProvide,reftext='{table-caption} {counter:table-num}']
+[#get_cap_serviceProvider,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
 .GetCapabilities response elements - ServiceIProvider
 !===
@@ -58,7 +43,29 @@ made optional.
 |providerSite | Reference to the most relevant web site of the service provider. | See CI_OnlineResource class in ISO 19115 | Zero or one (optional) | ?
 |serviceContact | Information for contacting service provider. | See CI_ResponsibleParty and subsidiary classes in ISO 19115* | Zero or one (optional | ?
 !===
+NOTE: The contents of the CI_ResponsibleParty class are modified to omit the optional organizationName attribute
+in CI_ContactInfo, since the ProviderName contains this information. The mandatory ―role‖ attribute in the
+CI_ResponsibleParty class is made optional, since no clear use of this information is known in the
+ServiceProvider section. Since all contents of the ServiceContact are now optional, the ServiceContact is now
+made optional.
 
+[#get_cap_OperationsMetadata,reftext='{table-caption} {counter:table-num}']
+[cols="4",options="header"]
+.GetCapabilities response elements - OperationsMetadata
+!===
+|Names | Definition  | Multiplicity and use | DGIWG
+|operation | Metadata for one operation that this server interface implements | One or more (mandatory) One for each implemented operation |  ?
+|parameter | Parameter valid domain that applies to one or more operations which this server implements. | Zero or more (optional) One for each such parameter with limited domain | ?
+|constraint | Constraint on valid domain of a nonparameter quantity that applies to this server. | Zero or more (optional) One for each such quantity with limited domain | ?
+|extendedCapabilities | Metadata about server and software additional abilities | Zero or one (optional) Included when server provides additional capabilities | ?
+!===
+
+
+*_Parts of Operation data structure ?_*
+
+
+
+*_from WPS 1.0_*
 
 [#process_sum,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
@@ -82,10 +89,15 @@ made optional.
 
 === Requirements for developping process profiles
 
+
 NOTE: description of process profiles is defined in http://docs.opengeospatial.org/is/14-065/14-065.html#32
 
 TIP: A process profile is a description of a process on an interface level. Process profiles may have different levels of abstraction and cover several aspects. On a generic level, a process profile may only refer to the provided functionality of a process, i.e. by giving a verbal or formal definition how the outputs are derived from the inputs. On a concrete level a process profile may completely define inputs and outputs including data type definitions and formats.
 Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. While this specification does not attempt to enforce or suggest any particular process profiles, it provides a mechanism to define common processing functionality within the scope of WPS, thus supporting basic process cataloguing and retrieval tasks for distributed processing infrastructures. Depending on the degree of harmonization, the definitions of process profiles may be used to foster a common understanding of widely used processing functions. However, they may also be used to harmonize the technical details of process interfaces and thus document particular interoperability arrangements between process providers and consumers.
+
+
+.Generic process model (source <<Ref-1>>)
+image::./images/GenericProcess.png[WPS_GenericProcess,align=center]
 
 *_Requirement {counter:req}: a DGIWG process profile shall satisfy requirement from ???_*
 
