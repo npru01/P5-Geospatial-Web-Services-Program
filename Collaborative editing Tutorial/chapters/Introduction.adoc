@@ -1,0 +1,20 @@
+
+== What is Git
+Git is a DVCS (Distributed Version Control System).
+
+== Set up Git environment
+
+In this chapter, we list the set of tools that should be installed to easily work on this collaborative environment. Most of the operations can be done using a visual tool such as Atom editor or GitHub Desktop application. Anyway, those tools require the Git client to be installed.
+
+=== Install Git
+
+Download git for OSX from http://git-scm.com/download/mac
+
+Download git for Windows from https://git-scm.com/download/win
+
+Download git for Linux from https://git-scm.com/download/linux
+
+=== Install Atom editor
+Download Atom editor from https://atom.io/
+
+By default, Atom integrates the GitHub add-on (https://github.atom.io/).
