@@ -1,6 +1,11 @@
 == Introduction to GitHub
+GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 == Working on an existing repository
+This first use case is useful when you want to collaborate to an existing project. That is the case for the DGIWG activity. In this case, the workflow is
+. Go to the DGIWG project/repository you want to work on
+. Fork the project to your account, so you have your own version
+. Clone on your machine your version
 
 
 == Working on a new project
