@@ -1,0 +1,64 @@
+== Glossary
+
+=== Git/GitHub Glossary
+
+==== Git
+Git is an open source program for tracking changes in text files, and is the core technology that GitHub, the social and user interface, is built on top of.
+
+==== Repository
+A repository is the most basic element of Git/GitHub. They're easiest to imagine as a project's folder. A repository contains all of the project files, and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private.
+
+==== Fork
+A fork is a personal copy of another user's repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original. Forks remain attached to the original, allowing you to submit a pull request to the original's author to update with your changes. You can also keep your fork up to date by pulling in updates from the original.
+
+==== Clone
+A clone is a copy of a repository that lives on your computer instead of on a website's server somewhere, or the act of making that copy. With your clone you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. It is, however, connected to the remote version so that changes can be synced between the two. You can push your local changes to the remote to keep them synced when you're online.
+
+==== Issue
+Issues are suggested improvements, tasks or questions related to the repository. Issues can be created by anyone (for public repositories), and are moderated by repository collaborators. Each issue contains its own discussion forum, can be labeled and assigned to a user.
+
+==== Commit
+A commit, or "revision", is an individual change to a file (or set of files). With Git, every time you do a commit, it creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of what changes were made when and by who. Commits usually contain a commit message which is a brief description of what changes were made.
+
+==== Branch
+A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make, you can merge your branch back into the master branch to publish your changes.
+The most recent commit on a branch is referred to as the *tip* of that branch. The tip of the branch is referenced by a branch head, which moves forward as additional development is done on the branch.
+
+==== HEAD
+HEAD is a reference to one of the heads in your repository, each branch having its own head.
+
+==== Diff
+A diff is the difference in changes between two commits, or saved changes. The diff will visually describe what was added or removed from a file since its last commit.
+
+==== Fetch
+Fetching refers to getting the latest changes from an online repository without merging them in. Once these changes are fetched you can compare them to your local branches (the code residing on your local machine).
+
+==== Merge
+Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a pull request (which can be thought of as a request to merge), or via the command line. A merge can be done automatically via a pull request via the GitHub web interface if there are no conflicting changes, or can always be done via the command line.
+
+==== Pull
+Pull refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up to date.
+
+==== Pull request
+Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository's collaborators. Like issues, pull requests each have their own discussion forum.
+
+*_Why is a git 'pull request' not called a 'push request'?_*
+
+A "pull request" is you requesting the target repository to please grab your changes. A "push request" would be the target repository requesting you to push your changes. When you send a pull request, you're asking (requesting) the official repo owner to pull some changes from your own repo. Hence "pull request".
+
+*_What is the advantage of using pull requests instead of simply merging a branch into master without one? Particularly on a team where all developers have full access to master._*
+
+Pull requests provide for checks and validations, even if anyone can push to master.
+
+The biggest advantage is that they provide an opportunity for review. The person that is responsible for performing the pull can look at the changes and make sure that they meet any kind of guidelines that the organisation or team has (related to a specific issue for example).
+
+Developing a habit of using pull requests may also help the team if one decide in the future that the whole team shouldn't have access to master. If the team grows larger, and especially if you have team members who are new to the product and/or new to Git, not giving them access to master can be safer for product integrity.
+
+==== Push
+Pushing refers to sending your committed changes to a remote repository, such as a repository hosted on GitHub. For instance, if you change something locally, you'd want to then push those changes so that others may access them.
+
+==== Remote
+This is the version of something that is hosted on a server, most likely GitHub. It can be connected to local clones so that changes can be synced.
+
+==== Upstream
+When talking about a branch or a fork, the primary branch on the original repository is often referred to as the "upstream", since that is the main place that other changes will come in from. The branch/fork you are working on is then called the "downstream".

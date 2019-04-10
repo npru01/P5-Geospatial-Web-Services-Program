@@ -1,0 +1,13 @@
+= Git & Github tutorial
+:toc:
+:imagesdir: figures
+:sectlinks:
+:sectids!:
+:sectnums:
+:sectnumlevels: 2
+
+include::chapters/Glossary.adoc[]
+include::chapters/Introduction.adoc[]
+include::chapters/GitCommands.adoc[]
+include::chapters/Atom.adoc[]
+include::chapters/Github.adoc[]
