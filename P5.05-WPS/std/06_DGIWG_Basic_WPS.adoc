@@ -34,7 +34,12 @@ WARNING: structure of requirement (DGIWG current style vs new OGC style), to be 
 
 *_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall implement the Basic WPS service profile conformance class <<Ref-1>>._*
 
-NOTE: Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.
+"_Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings._" (source <<Ref-1>>)
+
+NOTE: To clarify previous sentence, it requires to support synchronous or/and asynchronous conformance class(es).
+Syncrhonous require support of GetCapabilities, DescribeProcess and Execute operations.
+Asynchrnous require suport of GetCapabilities, DescribeProcess, Execute, GetStatus and GetResult operations.
+for each of these operation, at least one binding has to be supported.
 
 ==== GetCapabilities operation
 
