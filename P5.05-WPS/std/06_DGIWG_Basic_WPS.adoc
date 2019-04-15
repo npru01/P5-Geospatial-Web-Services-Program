@@ -16,7 +16,7 @@ The Normative requirements requested by this conformance class are summarized in
 !===
 
 === Non-Normative Recommendations for Implementation
-The non-normative recommandation defined by this profile are summarized in Table <<dgiwg_basic_wps_rec>>.
+The non-normative recommandation defined by this profile are summarized in <<dgiwg_basic_wps_rec>>.
 [#dgiwg_basic_wps_rec,reftext='{table-caption} {counter:table-num}']
 [cols="3",options="header"]
 .DGIWG WPS Profile Non-normative Recommendations for DGIWG Basic WPS Server Implementation

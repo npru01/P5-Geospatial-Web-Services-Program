@@ -5,7 +5,7 @@ _(As applicable)_
 For the purposes of this document, terms and definitions found in WPS 2.0 (<<Ref-1>>) apply.
 
 === Abrevations
-[#Abr,reftext='{table-caption} {counter:table-num}']
+[#Abr,reftext='{table-caption}']
 [cols="30,170"]
 
 !===

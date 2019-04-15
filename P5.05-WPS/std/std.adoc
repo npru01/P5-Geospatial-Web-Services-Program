@@ -74,7 +74,7 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 
 
 
-[#front_page,reftext='{table-caption} {counter:table-num}']
+[#front_page,reftext='{table-caption}']
 [cols="25,85"]
 !===
 |Document type:	|Standard
