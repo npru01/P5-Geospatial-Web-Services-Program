@@ -45,11 +45,11 @@ for each of these operation, at least one binding has to be supported.
 
 *_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response as described in tables <<get_cap_serviceID>>, <<get_cap_serviceProvider>>, <<get_cap_OperationsMetadata>> ._*
 
-*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. for each element of type LanguageString, it does require for element lang to be "en-gb"._*
-
 *_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString._*
 
-NOTE: for eaxmple _title_, _abstract_ and _keywords_ elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-gb) and optionalty in other languages (with lang fr-ca for french (Canada)).
+NOTE: for example _title_, _abstract_ and _keywords_ elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-gb) and optionalty in other languages (with lang fr-ca for french (Canada)).
+
+*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-gb"._*
 
 .GetCapabilities reponse document UML class diagram (source <<Ref-1>>)
 image::./images/Capabilities.png[WPS_Capabilities,align=center]
@@ -92,7 +92,7 @@ made optional.
 .GetCapabilities response elements - OperationsMetadata
 !===
 |Names | Definition  | Multiplicity and use | DGIWG
-|operation | Metadata for one operation that this server interface implements | One or more (mandatory) One for each implemented operation |  ?
+|operation | Metadata for one operation that this server interface implements | One or more (mandatory). One for each implemented operation. |  Meaning at least GetCapabilities, DescribeProcess and Execute for synchronous WPS. Additionally GetStatus and GetResult have to be described.
 |parameter | Parameter valid domain that applies to one or more operations which this server implements. | Zero or more (optional) One for each such parameter with limited domain | ?
 |constraint | Constraint on valid domain of a nonparameter quantity that applies to this server. | Zero or more (optional) One for each such quantity with limited domain | ?
 |extendedCapabilities | Metadata about server and software additional abilities | Zero or one (optional) Included when server provides additional capabilities | ?
@@ -103,7 +103,7 @@ made optional.
 .GetCapabilities response elements - Language
 !===
 |Names | Definition  | Multiplicity and use | DGIWG
-|XX | YY  | ZZZ | zzzz
+|Languages | List of languages supported by the server.| Zero or One (optional) | *_One (or more), at least english._*
 !===
 
 
@@ -119,9 +119,9 @@ made optional.
 !===
 |Names |Definition | Data type and values | Multiplicity and use | DGIWG
 |Title| Title of a process, normally available for display to a human. | ows:Title | One (mandatory) | One (mandatory)
-|Abstract | Brief narrative description of a process, normally available for display to a human. | ows:Abstract | Zero or more (optional) | ?
-|Keywords | Keywords that characterize a process. | ows:Keyword | Zero or more (optional | ?
-|Identifier | Unambiguous identifier or name of a process. | ows:Identifier | One (mandatory) | ?
+|Abstract | Brief narrative description of a process, normally available for display to a human. | ows:Abstract | Zero or more (optional) | *_One or more (other language thant english)_*
+|Keywords | Keywords that characterize a process. | ows:Keyword | Zero or more (optional | *_minimal set of keywords to be defined by DGIWG_*
+|Identifier | Unambiguous identifier or name of a process. | ows:Identifier | One (mandatory) | *_to be defined by DGIWG_*
 |Metadata |Reference to more metadata about this item. | ows:Metadata | Zero or more (optional) Include when available and useful | ?
 |processModel |Inherited from Table 29. | - | - | ?
 |jobControlOptions |Inherited from Table 29. | - | - | ?
