@@ -45,7 +45,11 @@ for each of these operation, at least one binding has to be supported.
 
 *_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response as described in tables <<get_cap_serviceID>>, <<get_cap_serviceProvider>>, <<get_cap_OperationsMetadata>> ._*
 
-*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WpS server shall provide metadata content in a response to a "GetCapabilities" request in English language._*
+*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. for each element of type LanguageString, it does require for element lang to be "en-gb"._*
+
+*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString._*
+
+NOTE: for eaxmple _title_, _abstract_ and _keywords_ elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-gb) and optionalty in other languages (with lang fr-ca for french (Canada)).
 
 .GetCapabilities reponse document UML class diagram (source <<Ref-1>>)
 image::./images/Capabilities.png[WPS_Capabilities,align=center]
@@ -66,6 +70,7 @@ image::./images/Capabilities.png[WPS_Capabilities,align=center]
 |fees | Fees and terms for using this server, including the monetary units as specified in ISO 4217. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no fees or terms | Zero or one (optional) | ?
 |accessConstraints | Access constraints that should be observed to assure the protection of privacy or intellectual property, and any other restrictions on retrieving or using data from or otherwise using this server. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no constraints are imposed | Zero or more (optional) | ?
 !===
+
 
 [#get_cap_serviceProvider,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
