@@ -1,38 +1,76 @@
 == DGIWG WPS basic (Normative)
 
-=== Requirements for DGIWG Basic WPS/Geoprocessing service
+=== Introduction
+This chapter defines normative requirements to implement DGIWG WPS basic conformance class.
 
-==== General
+=== Normative requirements
+The Normative requirements requested by this conformance class are summarized in <<dgiwg_basic_wps_req>>.
+[#dgiwg_basic_wps_req,reftext='{table-caption} {counter:table-num}']
+[cols="3",options="header"]
+.DGIWG Basic WPS Normative Server Requirements
+!===
+|No. | Requirement | Compliance
+|{counter:dgiwg_basic_req_table} | A DGIWG Basic WPS server shall ...| M
+|{counter:dgiwg_basic_req_table} | A DGIWG Basic WPS server shall ...| M
+|{counter:dgiwg_basic_req_table} | ...| ...
+!===
+
+=== Non-Normative Recommendations for Implementation
+The non-normative recommandation defined by this profile are summarized in <<dgiwg_basic_wps_rec>>.
+[#dgiwg_basic_wps_rec,reftext='{table-caption} {counter:table-num}']
+[cols="3",options="header"]
+.DGIWG WPS Profile Non-normative Recommendations for DGIWG Basic WPS Server Implementation
+!===
+|No. | Requirement | Compliance
+|{counter:dgiwg_basic_rec_table} | A DGIWG Basic WPS server should ...| M
+|{counter:dgiwg_basic_rec_table} | A DGIWG Basic WPS server should ...| M
+|{counter:dgiwg_basic_rec_table} | ...| ...
+!===
+
+
+=== General
 
 WARNING: structure of requirement (DGIWG current style vs new OGC style), to be discussed in MANAGEMENT Team
 
-*_Requirement {counter:req}: a DGIWG Basic WPS server shall implement the Basic WPS service profile conformance class <<Ref-1>>._*
+*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall implement the Basic WPS service profile conformance class <<Ref-1>>._*
 
-NOTE: Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.
+"_Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings._" (source <<Ref-1>>)
+
+NOTE: To clarify previous sentence, it requires to support synchronous or/and asynchronous conformance class(es).
+Syncrhonous require support of GetCapabilities, DescribeProcess and Execute operations.
+Asynchrnous require suport of GetCapabilities, DescribeProcess, Execute, GetStatus and GetResult operations.
+for each of these operation, at least one binding has to be supported.
 
 ==== GetCapabilities operation
 
-*_Requirement {counter:req}: a DGIWG Basic WPS server shall implement provide elements in the GetCapabilities response as described in table <<get_cap>>._*
+*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response as described in tables <<get_cap_serviceID>>, <<get_cap_serviceProvider>>, <<get_cap_OperationsMetadata>> ._*
+
+*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString._*
+
+NOTE: for example _title_, _abstract_ and _keywords_ elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-gb) and optionalty in other languages (with lang fr-ca for french (Canada)).
+
+*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-gb"._*
 
 .GetCapabilities reponse document UML class diagram (source <<Ref-1>>)
 image::./images/Capabilities.png[WPS_Capabilities,align=center]
 
-*_from OWS-Common 1.1_*
+*_from OWS-Common 2.0 (source <<Ref-2>>)_*
 
 [#get_cap_serviceID,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
 .GetCapabilities response elements - ServiceIdentification
 !===
 |Names | Definition | Data type and values | Multiplicity and use | DGIWG
-|serviceType | A service type URN from a registry of services, normally used for machine-to-machine communication. | URN | One (mandatory) | One (mandatory)
-|serviceTypeVersion | Versions of this service type implemented by this server. | Character string type, not empty | One or more (mandatory) | ?
-|profile | Identifier of OGC Web Service (OWS) Application Profile. | Character string type, not empty | Zero or more (optional) | ?
+|serviceType | A service type URN from a registry of services, normally used for machine-to-machine communication. | URN | One (mandatory) *_Fixed to "WPS"_* | One (mandatory)
+|serviceTypeVersion | Versions of this service type implemented by this server. | Character string type, not empty | One or more (mandatory) *_Shall contain at least value 2.0.2_* | One or more (mandatory)
+|profile | Identifier of OGC Web Service (OWS) Application Profile. | Character string type, not empty | Zero or one (optional) | One (mandatory) *_Shall contain at least one element with value http://www.dgiwg.org/std/wps/1.0/conf/basic_*
 |title | Title of this server, normally used for display to a human. | LanguageString data structure, see Figure 15 | One or more (mandatory) | ?
-|abstract | Brief narrative description of this server, normally available for display to a human. | LanguageString data structure, see Figure 15 | Zero or more (optional) | ?
+|abstract | Brief narrative description of this server, normally available for display to a human. | LanguageString data structure, see Figure 15 | Zero or more (optional) | Zero or more (optional) *_A DGIWG basic WPS server shall include the following information in the abstract element of the service metadata: "This service implements the DGIWG WPS 2.0 profile version 1.0, DGIWG Basic WPS conformance class (http://www.dgiwg.org/std/wps/1.0/conf/basic)."_*
 |keywords | Unordered list of one or more commonly used or formalised word(s) or phrase(s) used to describe this serve. | See MD_Keywords class in ISO 19115 | Zero or more (optional) | ?
 |fees | Fees and terms for using this server, including the monetary units as specified in ISO 4217. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no fees or terms | Zero or one (optional) | ?
 |accessConstraints | Access constraints that should be observed to assure the protection of privacy or intellectual property, and any other restrictions on retrieving or using data from or otherwise using this server. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no constraints are imposed | Zero or more (optional) | ?
 !===
+
 
 [#get_cap_serviceProvider,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
@@ -54,10 +92,18 @@ made optional.
 .GetCapabilities response elements - OperationsMetadata
 !===
 |Names | Definition  | Multiplicity and use | DGIWG
-|operation | Metadata for one operation that this server interface implements | One or more (mandatory) One for each implemented operation |  ?
+|operation | Metadata for one operation that this server interface implements | One or more (mandatory). One for each implemented operation. |  Meaning at least GetCapabilities, DescribeProcess and Execute for synchronous WPS. Additionally GetStatus and GetResult have to be described.
 |parameter | Parameter valid domain that applies to one or more operations which this server implements. | Zero or more (optional) One for each such parameter with limited domain | ?
 |constraint | Constraint on valid domain of a nonparameter quantity that applies to this server. | Zero or more (optional) One for each such quantity with limited domain | ?
 |extendedCapabilities | Metadata about server and software additional abilities | Zero or one (optional) Included when server provides additional capabilities | ?
+!===
+
+[#get_cap_Language,reftext='{table-caption} {counter:table-num}']
+[cols="4",options="header"]
+.GetCapabilities response elements - Language
+!===
+|Names | Definition  | Multiplicity and use | DGIWG
+|Languages | List of languages supported by the server.| Zero or One (optional) | *_One (or more), at least english._*
 !===
 
 
@@ -65,7 +111,7 @@ made optional.
 
 
 
-*_from WPS 1.0_*
+*_from WPS 2.0 (source <<Ref-1>>)_*
 
 [#process_sum,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
@@ -73,9 +119,9 @@ made optional.
 !===
 |Names |Definition | Data type and values | Multiplicity and use | DGIWG
 |Title| Title of a process, normally available for display to a human. | ows:Title | One (mandatory) | One (mandatory)
-|Abstract | Brief narrative description of a process, normally available for display to a human. | ows:Abstract | Zero or more (optional) | ?
-|Keywords | Keywords that characterize a process. | ows:Keyword | Zero or more (optional | ?
-|Identifier | Unambiguous identifier or name of a process. | ows:Identifier | One (mandatory) | ?
+|Abstract | Brief narrative description of a process, normally available for display to a human. | ows:Abstract | Zero or more (optional) | *_One or more (other language thant english)_*
+|Keywords | Keywords that characterize a process. | ows:Keyword | Zero or more (optional | *_minimal set of keywords to be defined by DGIWG_*
+|Identifier | Unambiguous identifier or name of a process. | ows:Identifier | One (mandatory) | *_to be defined by DGIWG_*
 |Metadata |Reference to more metadata about this item. | ows:Metadata | Zero or more (optional) Include when available and useful | ?
 |processModel |Inherited from Table 29. | - | - | ?
 |jobControlOptions |Inherited from Table 29. | - | - | ?
@@ -86,19 +132,3 @@ made optional.
 
 
 ==== Execute operation
-
-=== Requirements for developping process profiles
-
-
-NOTE: description of process profiles is defined in http://docs.opengeospatial.org/is/14-065/14-065.html#32
-
-TIP: A process profile is a description of a process on an interface level. Process profiles may have different levels of abstraction and cover several aspects. On a generic level, a process profile may only refer to the provided functionality of a process, i.e. by giving a verbal or formal definition how the outputs are derived from the inputs. On a concrete level a process profile may completely define inputs and outputs including data type definitions and formats.
-Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. While this specification does not attempt to enforce or suggest any particular process profiles, it provides a mechanism to define common processing functionality within the scope of WPS, thus supporting basic process cataloguing and retrieval tasks for distributed processing infrastructures. Depending on the degree of harmonization, the definitions of process profiles may be used to foster a common understanding of widely used processing functions. However, they may also be used to harmonize the technical details of process interfaces and thus document particular interoperability arrangements between process providers and consumers.
-
-
-.Generic process model (source <<Ref-1>>)
-image::./images/GenericProcess.png[WPS_GenericProcess,align=center]
-
-*_Requirement {counter:req}: a DGIWG process profile shall satisfy requirement from ???_*
-
-*_Requirement {counter:req}: a DGIWG process profile shall follow template ... to document WPS process profiles._*

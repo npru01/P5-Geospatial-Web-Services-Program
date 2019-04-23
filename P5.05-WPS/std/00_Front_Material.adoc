@@ -28,7 +28,7 @@ _(Clauses i-iv are optional, and not mandated for approval of issue, however ass
 
 *i.Contributing participants*
 
-[#status_codes,reftext='{table-caption} {counter:table-num}']
+[#status_codes,reftext='{table-caption}']
 [cols="30,205",options="header"]
 !===
 |Nation |Parent organization
@@ -46,7 +46,7 @@ _(Clauses i-iv are optional, and not mandated for approval of issue, however ass
 
 All questions regarding this document shall be directed to the editor or the contributors:
 
-[#poc,reftext='{table-caption} {counter:table-num}']
+[#poc,reftext='{table-caption}']
 [cols="50,85,85",options="header"]
 !===
 |Person |Organization | Email
@@ -62,12 +62,12 @@ NOTE: All personal information will be removed when an internal document is made
 
 *iii.Revision history*
 
-[#revision_history,reftext='{table-caption} {counter:table-num}']
+[#revision_history,reftext='{table-caption}']
 [cols="40,50,85,85",options="header"]
 !===
 |Date |Edition number |Primary clauses modified | Description
 |`2018.08.03` |0.1 | All | first draft from DGIWG adoc template
-
+|`2019.04.15` |0.1.1 | All | draft prior to Vienna
 !===
 
 

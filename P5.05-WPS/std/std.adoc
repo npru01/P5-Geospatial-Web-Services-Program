@@ -74,7 +74,7 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 
 
 
-[#front_page,reftext='{table-caption} {counter:table-num}']
+[#front_page,reftext='{table-caption}']
 [cols="25,85"]
 !===
 |Document type:	|Standard
@@ -123,6 +123,8 @@ include::04_Terms_and_Definitions.adoc[]
 include::05_WPS2.0_presentation.adoc[]
 
 include::06_DGIWG_Basic_WPS.adoc[]
+
+include::07_DGIWG_Process.adoc[]
 
 // you may add any number of chapters as required here
 
