@@ -32,9 +32,9 @@ The non-normative recommandation defined by this profile are summarized in <<dgi
 
 WARNING: structure of requirement (DGIWG current style vs new OGC style), to be discussed in MANAGEMENT Team
 
-*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall implement the Basic WPS service profile conformance class <<Ref-1>>._*
+*_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall implement the Basic WPS service profile conformance class <<OGC-WPS-2.0>>._*
 
-"_Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings._" (source <<Ref-1>>)
+"_Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings._" (source <<OGC-WPS-2.0>>)
 
 NOTE: To clarify previous sentence, it requires to support synchronous or/and asynchronous conformance class(es).
 Syncrhonous require support of GetCapabilities, DescribeProcess and Execute operations.
@@ -51,10 +51,10 @@ NOTE: for example _title_, _abstract_ and _keywords_ elements are of type Langua
 
 *_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-gb"._*
 
-.GetCapabilities reponse document UML class diagram (source <<Ref-1>>)
+.GetCapabilities reponse document UML class diagram (source <<OGC-WPS-2.0>>)
 image::./images/Capabilities.png[WPS_Capabilities,align=center]
 
-*_from OWS-Common 2.0 (source <<Ref-2>>)_*
+*_from OWS-Common 2.0 (source <<OWS-Common-2.0>>)_*
 
 [#get_cap_serviceID,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
@@ -74,7 +74,7 @@ image::./images/Capabilities.png[WPS_Capabilities,align=center]
 
 [#get_cap_serviceProvider,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
-.GetCapabilities response elements - ServiceIProvider
+.GetCapabilities response elements - ServiceProvider
 !===
 |Names | Definition | Data type and values | Multiplicity and use | DGIWG
 |providerName | Unique identifier for service provider organization | Character string type, not empty | One (mandatory) | ?
@@ -111,7 +111,9 @@ made optional.
 
 
 
-*_from WPS 2.0 (source <<Ref-1>>)_*
+*_from WPS 2.0 (source <<OGC-WPS-2.0>>)_*
+
+The contents section delivers information about the process offerings of the server.
 
 [#process_sum,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
@@ -119,7 +121,7 @@ made optional.
 !===
 |Names |Definition | Data type and values | Multiplicity and use | DGIWG
 |Title| Title of a process, normally available for display to a human. | ows:Title | One (mandatory) | One (mandatory)
-|Abstract | Brief narrative description of a process, normally available for display to a human. | ows:Abstract | Zero or more (optional) | *_One or more (other language thant english)_*
+|Abstract | Brief narrative description of a process, normally available for display to a human. | ows:Abstract | Zero or more (optional) | *_One or more (other language than english)_*
 |Keywords | Keywords that characterize a process. | ows:Keyword | Zero or more (optional | *_minimal set of keywords to be defined by DGIWG_*
 |Identifier | Unambiguous identifier or name of a process. | ows:Identifier | One (mandatory) | *_to be defined by DGIWG_*
 |Metadata |Reference to more metadata about this item. | ows:Metadata | Zero or more (optional) Include when available and useful | ?

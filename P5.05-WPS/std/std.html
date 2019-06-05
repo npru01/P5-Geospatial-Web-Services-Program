@@ -281,6 +281,12 @@ NOTE: All personal information will be removed when an internal document is made
 <td class="tableblock halign-left valign-top"><p class="tableblock">All</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">first draft from DGIWG adoc template</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2019.04.15</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">draft prior to Vienna</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -474,13 +480,13 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="Ref-1">OGC® WPS 2.0.2 Interface Standard</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="OGC-WPS-2" class="0">OGC® WPS 2.0.2 Interface Standard</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OGC 14-065</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.0.2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[2]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="Ref-2">OGC® OWS-Common 2.0 Implementation Specification</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="OWS-Common-2" class="0">OGC® OWS-Common 2.0 Implementation Specification</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">06-121r9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.0.0</p></td>
 </tr>
@@ -503,11 +509,6 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OGC® WPS 2.0.2 Interface Standard</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OGC 14-065</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.0.2</p></td>
-</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OGC® Testbed-13: Workflows ER</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OGC 17-029</p></td>
@@ -702,7 +703,10 @@ structure of requirement (DGIWG current style vs new OGC style), to be discussed
 </table>
 </div>
 <div class="paragraph">
-<p><strong><em>Requirement 1: a DGIWG Basic WPS server shall implement the Basic WPS service profile conformance class <a href="#Ref-1">[Ref-1]</a>.</em></strong></p>
+<p><strong><em>Requirement 1: a DGIWG Basic WPS server shall implement the Basic WPS service profile conformance class <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>.</em></strong></p>
+</div>
+<div class="paragraph">
+<p>"<em>Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.</em>" (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -711,7 +715,10 @@ structure of requirement (DGIWG current style vs new OGC style), to be discussed
 <div class="title">Note</div>
 </td>
 <td class="content">
-Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.
+To clarify previous sentence, it requires to support synchronous or/and asynchronous conformance class(es).
+Syncrhonous require support of GetCapabilities, DescribeProcess and Execute operations.
+Asynchrnous require suport of GetCapabilities, DescribeProcess, Execute, GetStatus and GetResult operations.
+for each of these operation, at least one binding has to be supported.
 </td>
 </tr>
 </table>
@@ -719,16 +726,34 @@ Basic WPS conformance class comprises the synchronous and asynchronous execution
 <div class="sect3">
 <h4 id="_getcapabilities_operation"><a class="anchor" href="#_getcapabilities_operation"></a>7.4.1. GetCapabilities operation</h4>
 <div class="paragraph">
-<p><strong><em>Requirement 2: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response as described in tables <a href="#get_cap_serviceID">Table 4</a>,<a href="#get_cap_serviceProvider">Table 5</a>, <a href="#get_cap_OperationsMetadata">Table 6</a> .</em></strong></p>
+<p><strong><em>Requirement 2: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response as described in tables <a href="#get_cap_serviceID">Table 4</a>, <a href="#get_cap_serviceProvider">Table 5</a>, <a href="#get_cap_OperationsMetadata">Table 6</a> .</em></strong></p>
+</div>
+<div class="paragraph">
+<p><strong><em>Requirement 3: a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString.</em></strong></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-gb) and optionalty in other languages (with lang fr-ca for french (Canada)).
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong><em>Requirement 4: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-gb".</em></strong></p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
 <img src="./images/Capabilities.png" alt="WPS_Capabilities">
 </div>
-<div class="title">Figure 1. GetCapabilities reponse document UML class diagram (source <a href="#Ref-1">[Ref-1]</a>)</div>
+<div class="title">Figure 1. GetCapabilities reponse document UML class diagram (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</div>
 </div>
 <div class="paragraph">
-<p><strong><em>from OWS-Common 1.1</em></strong></p>
+<p><strong><em>from OWS-Common 2.0 (source <a href="#OWS-Common-2.0">[OWS-Common-2.0]</a>)</em></strong></p>
 </div>
 <table id="get_cap_serviceID" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. GetCapabilities response elements - ServiceIdentification</caption>
@@ -753,22 +778,22 @@ Basic WPS conformance class comprises the synchronous and asynchronous execution
 <td class="tableblock halign-left valign-top"><p class="tableblock">serviceType</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A service type URN from a registry of services, normally used for machine-to-machine communication.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URN</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory) <strong><em>Fixed to "WPS"</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">serviceTypeVersion</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Versions of this service type implemented by this server.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Character string type, not empty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One or more (mandatory) <strong><em>Shall contain at least value 2.0.2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One or more (mandatory)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">profile</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of OGC Web Service (OWS) Application Profile.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Character string type, not empty</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>place to advertise for DGIGW profile ?</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory) <strong><em>Shall contain at least one element with value <a href="http://www.dgiwg.org/std/wps/1.0/conf/basic" class="bare">http://www.dgiwg.org/std/wps/1.0/conf/basic</a></em></strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">title</p></td>
@@ -782,7 +807,7 @@ Basic WPS conformance class comprises the synchronous and asynchronous execution
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brief narrative description of this server, normally available for display to a human.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">LanguageString data structure, see Figure 15</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional) <strong><em>A DGIWG basic WPS server shall include the following information in the abstract element of the service metadata: "This service implements the DGIWG WPS 2.0 profile version 1.0, DGIWG Basic WPS conformance class (<a href="http://www.dgiwg.org/std/wps/1.0/conf/basic)."" class="bare">http://www.dgiwg.org/std/wps/1.0/conf/basic)."</a></em></strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">keywords</p></td>
@@ -885,8 +910,8 @@ made optional.
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">operation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Metadata for one operation that this server interface implements</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">One or more (mandatory) One for each implemented operation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One or more (mandatory). One for each implemented operation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meaning at least GetCapabilities, DescribeProcess and Execute for synchronous WPS. Additionally GetStatus and GetResult have to be described.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">parameter</p></td>
@@ -926,10 +951,10 @@ made optional.
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">XX</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">YY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ZZZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">zzzz</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Languages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List of languages supported by the server.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero or One (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>One (or more), at least english.</em></strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -937,7 +962,7 @@ made optional.
 <p><strong><em>Parts of Operation data structure ?</em></strong></p>
 </div>
 <div class="paragraph">
-<p><strong><em>from WPS 2.0</em></strong></p>
+<p><strong><em>from WPS 2.0 (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</em></strong></p>
 </div>
 <table id="process_sum" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 8. ProcessSummary response elements</caption>
@@ -970,21 +995,21 @@ made optional.
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brief narrative description of a process, normally available for display to a human.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Abstract</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>One or more (other language than english)</em></strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Keywords</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Keywords that characterize a process.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Keyword</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>minimal set of keywords to be defined by DGIWG</em></strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unambiguous identifier or name of a process.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Identifier</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>to be defined by DGIWG</em></strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Metadata</p></td>
@@ -1141,7 +1166,7 @@ Process profiles are blueprints for process implementations and are meant to har
 <div class="content">
 <img src="./images/GenericProcess.png" alt="WPS_GenericProcess">
 </div>
-<div class="title">Figure 2. Generic process model (source <a href="#Ref-1">[Ref-1]</a>)</div>
+<div class="title">Figure 2. Generic process model (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</div>
 </div>
 <div class="paragraph">
 <p><strong><em>Requirement 1: a DGIWG process profile shall define Title, Abstract and ID.</em></strong></p>
