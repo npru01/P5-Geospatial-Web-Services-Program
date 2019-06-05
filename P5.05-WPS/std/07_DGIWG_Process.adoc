@@ -34,7 +34,7 @@ TIP: A process profile is a description of a process on an interface level. Proc
 Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. While this specification does not attempt to enforce or suggest any particular process profiles, it provides a mechanism to define common processing functionality within the scope of WPS, thus supporting basic process cataloguing and retrieval tasks for distributed processing infrastructures. Depending on the degree of harmonization, the definitions of process profiles may be used to foster a common understanding of widely used processing functions. However, they may also be used to harmonize the technical details of process interfaces and thus document particular interoperability arrangements between process providers and consumers.
 
 
-.Generic process model (source <<Ref-1>>)
+.Generic process model (source <<OGC-WPS-2.0>>)
 image::./images/GenericProcess.png[WPS_GenericProcess,align=center]
 
 *_Requirement {counter:process_req}: a DGIWG process profile shall define Title, Abstract and ID._*
