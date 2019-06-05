@@ -74,7 +74,7 @@ image::./images/Capabilities.png[WPS_Capabilities,align=center]
 
 [#get_cap_serviceProvider,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
-.GetCapabilities response elements - ServiceIProvider
+.GetCapabilities response elements - ServiceProvider
 !===
 |Names | Definition | Data type and values | Multiplicity and use | DGIWG
 |providerName | Unique identifier for service provider organization | Character string type, not empty | One (mandatory) | ?
@@ -112,6 +112,8 @@ made optional.
 
 
 *_from WPS 2.0 (source <<OGC-WPS-2.0>>)_*
+
+The contents section delivers information about the process offerings of the server.
 
 [#process_sum,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
