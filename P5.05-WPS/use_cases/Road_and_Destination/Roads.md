@@ -52,25 +52,6 @@ https://roads.googleapis.com/v1/snapToRoads?path=-35.27801,149.12958|-35.28032,1
 
 <b>Response</b>
 
-[source,xml]
-----
-<?xml version="1.0" encoding="UTF-8"?>
-<XLS
-  xmlns:xls="http://www.opengis.net/xls"
-  xmlns:gml="http://www.opengis.net/gml"
-  xmlns="http://www.opengis.net/xls"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  version="1.2"
-  xsi:schemaLocation="http://www.opengis.net/xls http://schemas.opengis.net/ols/1.2/olsAll.xsd">
-    <RequestHeader/>
-    <Request requestID="1" version="1.2" methodName="LocationUtilityService">
-       <GeocodeRequest returnFreeForm="false">
-         <Address countryCode="PositionOfInterest">
-                <freeFormAddress>rennes</freeFormAddress>
-         </Address>
-       </GeocodeRequest>
-    </Request>
-</XLS>
-----
+
 
 TBC
