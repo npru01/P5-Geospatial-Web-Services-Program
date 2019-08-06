@@ -41,3 +41,121 @@
 
 ><b>nearestRoads</b>...
 >>_Indicates roads near to present location_
+
+<b><h5>Example Request</h5></b>
+
+>The following request will snap the specified points to the road geometry. This particular set of data follows a circular road; setting <b>interpolate=true</b> ensure that the returned geometry will match the curvature of the road. With <b>interpolate=false</b>, the snapped path will still follow the road, but the resulting polyline will not be as smooth.
+
+<b>Request</b>
+
+https://roads.googleapis.com/v1/snapToRoads?path=-35.27801,149.12958|-35.28032,149.12907|-35.28099,149.12929|-35.28144,149.12984|-35.28194,149.13003|-35.28282,149.12956|-35.28302,149.12881|-35.28473,149.12836&interpolate=true&key=API_KEY
+
+<b>Response</b>
+
+{
+  "snappedPoints": [
+    {
+      "location": {
+        "latitude": -35.2784167,
+        "longitude": 149.1294692
+      },
+      "originalIndex": 0,
+      "placeId": "ChIJoR7CemhNFmsRQB9QbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.280321693840129,
+        "longitude": 149.12908274880189
+      },
+      "originalIndex": 1,
+      "placeId": "ChIJiy6YT2hNFmsRkHZAbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.2803415,
+        "longitude": 149.1290788
+      },
+      "placeId": "ChIJiy6YT2hNFmsRkHZAbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.2803415,
+        "longitude": 149.1290788
+      },
+      "placeId": "ChIJI2FUTGhNFmsRcHpAbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.280451499999991,
+        "longitude": 149.1290784
+      },
+      "placeId": "ChIJI2FUTGhNFmsRcHpAbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.2805167,
+        "longitude": 149.1290879
+      },
+      "placeId": "ChIJI2FUTGhNFmsRcHpAbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.2805901,
+        "longitude": 149.1291104
+      },
+      "placeId": "ChIJI2FUTGhNFmsRcHpAbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.2805901,
+        "longitude": 149.1291104
+      },
+      "placeId": "ChIJW9R7smlNFmsRMH1AbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.280734599999995,
+        "longitude": 149.1291517
+      },
+      "placeId": "ChIJW9R7smlNFmsRMH1AbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.2807852,
+        "longitude": 149.1291716
+      },
+      "placeId": "ChIJW9R7smlNFmsRMH1AbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.2808499,
+        "longitude": 149.1292099
+      },
+      "placeId": "ChIJW9R7smlNFmsRMH1AbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.280923099999995,
+        "longitude": 149.129278
+      },
+      "placeId": "ChIJW9R7smlNFmsRMH1AbW7qABM"
+    },
+    {
+      "location": {
+        "latitude": -35.280960897210818,
+        "longitude": 149.1293250692261
+      },
+      "originalIndex": 2,
+      "placeId": "ChIJW9R7smlNFmsRMH1AbW7qABM"
+    },
+    ... results truncated ...
+    {
+      "location": {
+        "latitude": -35.284728724835304,
+        "longitude": 149.12835061713685
+      },
+      "originalIndex": 7,
+      "placeId": "ChIJW5JAZmpNFmsRegG0-Jc80sM"
+    }
+  ]
+}
