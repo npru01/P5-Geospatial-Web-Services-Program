@@ -30,6 +30,9 @@
 >>><b>placeId</b>
 >>>>_A unique identifier for a place_
 
+><b>warning_message</b>
+>>_A string containing a user-visible warning
+
 ><b>speedlimits</b>
 >>_An array of road metadata_
 
