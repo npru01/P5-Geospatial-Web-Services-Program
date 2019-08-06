@@ -2,6 +2,8 @@
  
 <b><h3>Roads</h3></b>
 
+<i>These parametetes have been taken from Google 2018
+
 ><b>Path</b>
 >>_The path parameter accepts a list of latitude/longitude pairs._
 
