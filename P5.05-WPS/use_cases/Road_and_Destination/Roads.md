@@ -34,5 +34,5 @@
 ><b>Units</b>
 >>_KPH or MPH or KNOTS_
 
-><b>nearestRoads</b>
+><b>nearestRoads</b>...
 >>_Indicates roads near to present location_
