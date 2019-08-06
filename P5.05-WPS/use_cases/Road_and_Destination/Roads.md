@@ -54,4 +54,5 @@ https://roads.googleapis.com/v1/snapToRoads?path=-35.27801,149.12958|-35.28032,1
 
 <img src="https://github.com/DGIWG/P5-Geospatial-Web-Services-Program/blob/master/_figures/1.PNG">
 <img src="https://github.com/DGIWG/P5-Geospatial-Web-Services-Program/blob/master/_figures/2.PNG">
+<img src="https://github.com/DGIWG/P5-Geospatial-Web-Services-Program/blob/master/_figures/3.PNG">
 TBC
