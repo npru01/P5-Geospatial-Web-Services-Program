@@ -3,10 +3,10 @@ _(Mandatory for standards)_
 
 === Conformance classes
 
-This document establishes xx conformance classe(s):
+This document establishes 1 conformance class:
 
 - DGIWG basic WPS,
-- DGIWG xxx WPS.
+
 
 DGIWG WPS Profile conformance classes define requirements for WPS servers allowing
 distribution of geographic data in a military environment.
@@ -18,7 +18,7 @@ artefact claiming to implement the DGIWG WPS profile.
 .Conformance classes
 !===
 |Conformance class name |Operation or behavior | OGC WPS Conformance Test | DGIWG WPS Conformance Test
-|DGIWG basic WPS| DGIWG requirements x to y | - | Annex A.1
+|DGIWG basic WPS http://www.dgiwg.org/std/wps/2.0/conf/basic| DGIWG requirements x to y | - | Annex A.1
 !===
 
 
