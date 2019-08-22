@@ -32,7 +32,7 @@ _(Clauses i-iv are optional, and not mandated for approval of issue, however ass
 [cols="30,205",options="header"]
 !===
 |Nation |Parent organization
-|`France` | Institut National de l'Information Géographique et Forestière (IGN)
+| `France` | Institut National de l'Information Géographique et Forestière (IGN)
 | `Germany` | Bundeswehr Geoinformation Centre (BGIC)
 | `United States` |  National Geospatial-Intelligence Agency (NGA)
 | `United Kingdom` |  JtUser-C4ISR-Standards-Dev3

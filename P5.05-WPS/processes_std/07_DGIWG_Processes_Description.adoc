@@ -1,0 +1,115 @@
+== DGIWG Processes Description (Normative)
+
+=== Introduction
+This chapter defines DGIWG processes at a generic level. These definitions may be implemented through WPS or other APIs.
+Following DGIWG processes are desribed below:
+
+ - elevation analysis
+ - distance mesurement
+ - range rings
+ - viewshed
+ - slope helicopter landing zone
+ - gazetteer
+ - geopackage
+ - geocoding
+ - route calculation
+
+
+=== Elevation analysis
+==== Generic process : elevation analysis
+
+Process
+
+	  Identifier	http://www.dgiwg.org/service/processing/process/elevationanalysis
+	  Title	Elevation analysis
+	  Keywords	elevation, analysis, highest point, lowest point
+	  Abstract	It provides lowest and highest point(s) on a given area.
+	  Metadata
+
+Input
+
+	  Identifier	aoi
+	  Title	Area of interest
+	  Keywords
+	  Abstract	Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry.. (GM_Surface)
+	  Metadata
+	  Multiplicity	1
+
+Input
+
+	  Identifier	elavation_data
+	  Title	elevationData
+	  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
+	  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
+	  Metadata
+	  Multiplicity	0..1
+
+Input
+
+	  Identifier	analysis_type
+	  Title	Choice of highest or lowest points
+	  Keywords
+	  Abstract	Information providing if highest or lowest.
+	  Metadata
+	  Multiplicity	1
+
+Output
+
+	  Identifier	result_points
+	  Title	Highest or lowest points
+	  Keywords
+	  Abstract	Highest or lowest points returned by the process on the provided area of interest. This may also contain metadata describing the data sources used, the vertical CRS of the result.
+	  Metadata
+
+==== Process implementation : elevation analysis
+include here a WPS 2 example
+
+=== Distance mesurement
+
+==== Generic process : distance measurement
+
+Process
+
+	  Identifier	http://www.dgiwg.org/service/processing/process/distancemeasurement
+	  Title	Distance measurement
+	  Keywords	distance
+	  Abstract	It provides the distance between two or more points.
+	  Metadata
+
+Input
+
+	  Identifier	points_list
+	  Title	List of points
+	  Keywords
+	  Abstract	List of two or more points in a given CRS. CRS may be 2D or 3D (with Z or height information).
+	  Metadata
+	  Multiplicity	1
+	  Data format
+
+Input
+
+	  Identifier	measurement_method
+	  Title	Method of measurement
+	  Keywords
+	  Abstract	Method of measurement to be used for the calculation (for example euclidean, geodesic, …). This could include Z coordinate (or height above elispoid).
+	  Metadata
+	  Multiplicity	0..1
+	  Data format
+
+Input
+
+	  Identifier	uom
+	  Title	Unit of measure
+	  Keywords
+	  Abstract	Unit of measure for the measured distance(s) to be returned.
+	  Metadata
+	  Multiplicity	1
+	  Data format
+
+Output
+
+	  Identifier	distance_results
+	  Title	Distance results
+	  Keywords
+	  Abstract	Result set containing indivual distance between each point pair and/or the sum. This should include uom.
+	  Metadata
