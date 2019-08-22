@@ -9,10 +9,10 @@ This document establishes xx conformance classe(s):
 - DGIWG generic xxx process,
 - ...
 
-DGIWG WPS Profile conformance classes define requirements for WPS servers allowing
-distribution of geographic data in a military environment.
+_"DGIWG process"_ class define requirements for defining generic process description
+_"DGIWG generic xxx process"_ classes defines generic process descriptions acooding to "DGIWG process". These generic processes can be implemented by OGC WPS standards (verions 1 or 2) or possibliby other geoprocessing APIs.
 Annex A lists the conformance abstract tests which shall be exercised on any software
-artefact claiming to implement the DGIWG WPS profile.
+artefact claiming to implement these conformance classes.
 
 [#conf,reftext='{table-caption} {counter:table-num}']
 [cols="4",options="header"]
