@@ -1,5 +1,6 @@
 == Scope
 _(Mandatory)_
 
-This document defines specific Defence requirements, recommendations and guidelines for
-implementations of the OGC Web Processing Service (WPS) standard (document number 14-065), version 2.0.
+This document defines geoprocesses at the generic level which may be implemented by any version of OGC WPS standard or eventually another geoprocessing API.
+Following geoprocesses are defined:
+ __- include final list here__

@@ -18,7 +18,7 @@ artefact claiming to implement the DGIWG WPS profile.
 .Conformance classes
 !===
 |Conformance class name |Operation or behavior | OGC WPS Conformance Test | DGIWG WPS Conformance Test
-|DGIWG basic WPS http://www.dgiwg.org/std/wps/2.0/conf/basic| DGIWG requirements x to y | - | Annex A.1
+|DGIWG basic WPS http://www.dgiwg.org/std/wps/2.0/conf/basic | DGIWG requirements x to y | - | Annex A.1
 !===
 
 

@@ -1,33 +1,6 @@
 == Introduction
 _(Mandatory. The introduction is located on a separated page  preceding the ‘Scope’ statement. The introduction is not numbered.)_
 
-A Web Processing Service (WPS) executes processes based on geospatial data.
+Geoprocessing is a GIS operation used to manipulate spatial data. A typical geoprocessing operation takes an input dataset, performs an operation on that dataset, and returns the result of the operation as an output dataset. Common geoprocessing operations include geographic feature overlay, feature selection and analysis, topology processing, raster processing, and data conversion. Geoprocessing allows for definition, management, and analysis of information used to form decisions.[Wade, T. and Sommer, S. eds. A to Z GIS]. Geoprocessing may be done locally or remotely on a server (typically trhough the web or a network).
 
-This version 2.0 defines (_from OGC 14-065_)
-
-* a Core conceptual model that may be sed to specify a WPS in different architectures such as REST or SOAP,
-* a process model to support the description and discovery of processes on the web,
-* a basic data model that supports arbitrary (standard or non-standard) data formats for inputs and outputs,
-* a WPS service model and encoding based on OGC baseline standards, and
-* a Dismiss extension to allow clients to terminate asynchronous processing jobs.
-
-
-The WPS service model defines five operations, the Dismiss operation (allowing a user to cancel a job) being defined as an extension to it:
-
-* _GetCapabilities_ (mandatory): returns service metadata,
-* _DescribeProcess_ (mandatory): returns the description of a specific process,
-* _Execute_ (mandatory): creates a job to run a specific process,
-* _GetStatus_: returns status information about a processing job,
-* _GetResult_: returns the result of a processing job,
-
-Two bindings are now defined for these operations : HTTP/POST+XML and HTTP/GET+KVP (excepted for the _Execute_ operation)
-
-Conformity to the standard is organized with five conformance classes:
-
-* Basic WPS service profile
-* Synchronous WPS
-* Asynchronous WPS
-* WPS process model encoding
-* Dismiss extension
-
-The "_basic WPS service profile_"  defines a minimal WPS implementation that comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.
+This document defines geoprocesses at the generic level which may be implemented by any version of OGC WPS standard or eventually another geoprocessing API.

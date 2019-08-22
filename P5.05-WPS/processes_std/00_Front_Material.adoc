@@ -66,8 +66,7 @@ NOTE: All personal information will be removed when an internal document is made
 [cols="40,50,85,85",options="header"]
 !===
 |Date |Edition number |Primary clauses modified | Description
-|`2018.08.03` |0.1 | All | first draft from DGIWG adoc template
-|`2019.04.15` |0.1.1 | All | draft prior to Vienna
+|`2019.08.22` |0.1 | Dimitri | first draft from DGIWG adoc template
 !===
 
 
