@@ -54,15 +54,10 @@
 <li><a href="#_getcapabilities_operation">7.4.1. GetCapabilities operation</a></li>
 <li><a href="#_describeprocess_operation">7.4.2. DescribeProcess operation</a></li>
 <li><a href="#_execute_operation">7.4.3. Execute operation</a></li>
+<li><a href="#_getstatus_operation">7.4.4. GetStatus operation</a></li>
+<li><a href="#_getresult_operation">7.4.5. GetResult operation</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#_dgiwg_process_normative">8. DGIWG Process (Normative)</a>
-<ul class="sectlevel2">
-<li><a href="#_introduction_3">8.1. Introduction</a></li>
-<li><a href="#_normative_requirements_2">8.2. Normative requirements</a></li>
-<li><a href="#_non_normative_recommendations_for_implementation_2">8.3. Non-Normative Recommendations for Implementation</a></li>
 </ul>
 </li>
 </ul>
@@ -398,21 +393,17 @@ implementations of the OGC Web Processing Service (WPS) standard (document numbe
 <div class="sect2">
 <h3 id="_conformance_classes"><a class="anchor" href="#_conformance_classes"></a>3.1. Conformance classes</h3>
 <div class="paragraph">
-<p>This document establishes xx conformance classe(s):</p>
+<p>This document establishes 1 conformance class:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>DGIWG basic WPS,</p>
-</li>
-<li>
-<p>DGIWG xxx WPS.</p>
+<p>DGIWG basic WPS.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>DGIWG WPS Profile conformance classes define requirements for WPS servers allowing
-distribution of geographic data in a military environment.
+<p>DGIWG WPS Profile conformance classes define requirements for WPS 2.0 servers allowing distribution of geographic data in a military environment.
 Annex A lists the conformance abstract tests which shall be exercised on any software
 artefact claiming to implement the DGIWG WPS profile.</p>
 </div>
@@ -434,19 +425,25 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG basic WPS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG basic WPS <a href="http://www.dgiwg.org/std/wps/1.0/conf/basic" class="bare">http://www.dgiwg.org/std/wps/1.0/conf/basic</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirements x to y</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.1</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2</p></td>
-</tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+"http://www.dgiwg.org/std/wps/1.0/conf/basic" is an HTTP-URI which works as an identifier for the DGIWG basic conformance class. It is not an URL, redirecting to a web page. 1.0 identifies the version of the DGIWG standard (not the version of WPS it profiles).
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_backward_compatibility"><a class="anchor" href="#_backward_compatibility"></a>3.2. Backward compatibility</h3>
@@ -620,9 +617,9 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 <table id="dgiwg_basic_wps_req" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 2. DGIWG Basic WPS Normative Server Requirements</caption>
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 8.3333%;">
+<col style="width: 83.3333%;">
+<col style="width: 8.3334%;">
 </colgroup>
 <thead>
 <tr>
@@ -634,18 +631,23 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A DGIWG Basic WPS server shall &#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG Basic WPS server shall implement the "Basic WPS service profile" conformance class (<a href="http://www.opengis.net/spec/WPS/2.0/conf/service/profile/basic-wps" class="bare">http://www.opengis.net/spec/WPS/2.0/conf/service/profile/basic-wps</a>) from <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A DGIWG Basic WPS server shall &#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG Basic WPS server shall provide elements in the GetCapabilities response document as described in tables <a href="#get_cap_serviceID">Table 4</a>, <a href="#get_cap_serviceProvider">Table 5</a>, <a href="#get_cap_OperationsMetadata">Table 6</a>, <a href="#get_cap_Language">Table 7</a> and <a href="#process_sum">Table 8</a>.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
 </tr>
 </tbody>
 </table>
@@ -653,14 +655,14 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 <div class="sect2">
 <h3 id="_non_normative_recommendations_for_implementation"><a class="anchor" href="#_non_normative_recommendations_for_implementation"></a>7.3. Non-Normative Recommendations for Implementation</h3>
 <div class="paragraph">
-<p>The non-normative recommandation defined by this profile are summarized in <a href="#dgiwg_basic_wps_rec">Table 3</a>.</p>
+<p>The non-normative recommandations defined by this profile are summarized in <a href="#dgiwg_basic_wps_rec">Table 3</a>.</p>
 </div>
 <table id="dgiwg_basic_wps_rec" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 3. DGIWG WPS Profile Non-normative Recommendations for DGIWG Basic WPS Server Implementation</caption>
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 8.3333%;">
+<col style="width: 83.3333%;">
+<col style="width: 8.3334%;">
 </colgroup>
 <thead>
 <tr>
@@ -703,10 +705,10 @@ structure of requirement (DGIWG current style vs new OGC style), to be discussed
 </table>
 </div>
 <div class="paragraph">
-<p><strong><em>Requirement 1: a DGIWG Basic WPS server shall implement the Basic WPS service profile conformance class <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>.</em></strong></p>
+<p><strong><em>Requirement 1: a DGIWG Basic WPS server shall implement the "Basic WPS service profile" conformance class (<a href="http://www.opengis.net/spec/WPS/2.0/conf/service/profile/basic-wps" class="bare">http://www.opengis.net/spec/WPS/2.0/conf/service/profile/basic-wps</a>) from <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>.</em></strong></p>
 </div>
 <div class="paragraph">
-<p>"<em>Basic WPS conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.</em>" (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</p>
+<p>"<em>Basic WPS service profile conformance class comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.</em>" (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -716,9 +718,9 @@ structure of requirement (DGIWG current style vs new OGC style), to be discussed
 </td>
 <td class="content">
 To clarify previous sentence, it requires to support synchronous or/and asynchronous conformance class(es).
-Syncrhonous require support of GetCapabilities, DescribeProcess and Execute operations.
-Asynchrnous require suport of GetCapabilities, DescribeProcess, Execute, GetStatus and GetResult operations.
-for each of these operation, at least one binding has to be supported.
+Synchronous requires support of GetCapabilities, DescribeProcess and Execute operations.
+Asynchronous requires suport of GetCapabilities, DescribeProcess, Execute, GetStatus and GetResult operations.
+For each of these operation, at least one binding has to be supported (HTTP/GET+KVP or  HTTP/POST+XML).
 </td>
 </tr>
 </table>
@@ -726,10 +728,13 @@ for each of these operation, at least one binding has to be supported.
 <div class="sect3">
 <h4 id="_getcapabilities_operation"><a class="anchor" href="#_getcapabilities_operation"></a>7.4.1. GetCapabilities operation</h4>
 <div class="paragraph">
-<p><strong><em>Requirement 2: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response as described in tables <a href="#get_cap_serviceID">Table 4</a>, <a href="#get_cap_serviceProvider">Table 5</a>, <a href="#get_cap_OperationsMetadata">Table 6</a> .</em></strong></p>
+<p><strong><em>Requirement 2: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response document as described in tables <a href="#get_cap_serviceID">Table 4</a>, <a href="#get_cap_serviceProvider">Table 5</a>, <a href="#get_cap_OperationsMetadata">Table 6</a>, <a href="#get_cap_Language">Table 7</a> and <a href="#process_sum">Table 8</a>.</em></strong></p>
 </div>
 <div class="paragraph">
 <p><strong><em>Requirement 3: a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString.</em></strong></p>
+</div>
+<div class="paragraph">
+<p><strong><em>Requirement 4: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB".</em></strong></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -738,13 +743,10 @@ for each of these operation, at least one binding has to be supported.
 <div class="title">Note</div>
 </td>
 <td class="content">
-for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-gb) and optionalty in other languages (with lang fr-ca for french (Canada)).
+for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-GB) and optionalty in other languages (with lang fr-CA for french (Canada)).
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p><strong><em>Requirement 4: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-gb".</em></strong></p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -753,7 +755,7 @@ for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are
 <div class="title">Figure 1. GetCapabilities reponse document UML class diagram (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</div>
 </div>
 <div class="paragraph">
-<p><strong><em>from OWS-Common 2.0 (source <a href="#OWS-Common-2.0">[OWS-Common-2.0]</a>)</em></strong></p>
+<p>Following tables describes adittional requirements for filling in GetCapabilities response document.</p>
 </div>
 <table id="get_cap_serviceID" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. GetCapabilities response elements - ServiceIdentification</caption>
@@ -814,26 +816,26 @@ for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unordered list of one or more commonly used or formalised word(s) or phrase(s) used to describe this serve.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">See MD_Keywords class in ISO 19115</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>keywords are recommanded.</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">fees</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fees and terms for using this server, including the monetary units as specified in ISO 4217.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no fees or terms</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">accessConstraints</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Access constraints that should be observed to assure the protection of privacy or intellectual property, and any other restrictions on retrieving or using data from or otherwise using this server.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no constraints are imposed</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 </tbody>
 </table>
 <table id="get_cap_serviceProvider" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. GetCapabilities response elements - ServiceIProvider</caption>
+<caption class="title">Table 5. GetCapabilities response elements - ServiceProvider</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -856,21 +858,21 @@ for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unique identifier for service provider organization</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Character string type, not empty</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">providerSite</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reference to the most relevant web site of the service provider.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">See CI_OnlineResource class in ISO 19115</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">serviceContact</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Information for contacting service provider.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">See CI_ResponsibleParty and subsidiary classes in ISO 19115*</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 </tbody>
 </table>
@@ -881,11 +883,7 @@ for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are
 <div class="title">Note</div>
 </td>
 <td class="content">
-The contents of the CI_ResponsibleParty class are modified to omit the optional organizationName attribute
-in CI_ContactInfo, since the ProviderName contains this information. The mandatory ―role‖ attribute in the
-CI_ResponsibleParty class is made optional, since no clear use of this information is known in the
-ServiceProvider section. Since all contents of the ServiceContact are now optional, the ServiceContact is now
-made optional.
+The contents of the CI_ResponsibleParty class are modified to omit the optional organizationName attribute in CI_ContactInfo, since the ProviderName contains this information. The mandatory ―role― attribute in the CI_ResponsibleParty class is made optional, since no clear use of this information is known in the ServiceProvider section. Since all contents of the ServiceContact are now optional, the ServiceContact is now made optional.
 </td>
 </tr>
 </table>
@@ -917,19 +915,19 @@ made optional.
 <td class="tableblock halign-left valign-top"><p class="tableblock">parameter</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Parameter valid domain that applies to one or more operations which this server implements.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional) One for each such parameter with limited domain</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">constraint</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Constraint on valid domain of a nonparameter quantity that applies to this server.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional) One for each such quantity with limited domain</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">extendedCapabilities</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Metadata about server and software additional abilities</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional) Included when server provides additional capabilities</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 </tbody>
 </table>
@@ -959,10 +957,11 @@ made optional.
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong><em>Parts of Operation data structure ?</em></strong></p>
+<p><mark><strong><em>Parts of Operation data structure ?</em></strong></mark>
+not hing to be added here ?</p>
 </div>
 <div class="paragraph">
-<p><strong><em>from WPS 2.0 (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</em></strong></p>
+<p>The contents section delivers information about the process offerings of the server.</p>
 </div>
 <table id="process_sum" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 8. ProcessSummary response elements</caption>
@@ -1016,191 +1015,121 @@ made optional.
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reference to more metadata about this item.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Metadata</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional) Include when available and useful</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>#?</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">processModel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inherited from Table 29.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">jobControlOptions</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inherited from Table 29.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">outputTransmission</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inherited from Table 29.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>?</mark></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
 <h4 id="_describeprocess_operation"><a class="anchor" href="#_describeprocess_operation"></a>7.4.2. DescribeProcess operation</h4>
-
+<div class="paragraph">
+<p><mark>anything to be added ?</mark></p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_execute_operation"><a class="anchor" href="#_execute_operation"></a>7.4.3. Execute operation</h4>
-
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_dgiwg_process_normative"><a class="anchor" href="#_dgiwg_process_normative"></a>8. DGIWG Process (Normative)</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_introduction_3"><a class="anchor" href="#_introduction_3"></a>8.1. Introduction</h3>
 <div class="paragraph">
-<p>This chapter defines normative requirements to implement DGIWG process class.</p>
+<p><mark>anything to be added ?</mark></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_normative_requirements_2"><a class="anchor" href="#_normative_requirements_2"></a>8.2. Normative requirements</h3>
+<div class="sect3">
+<h4 id="_getstatus_operation"><a class="anchor" href="#_getstatus_operation"></a>7.4.4. GetStatus operation</h4>
 <div class="paragraph">
-<p>The Normative requirements requested by this conformance class are summarized in <a href="#dgiwg_process_req">Table 9</a>.</p>
+<p><mark>anything to be added ?</mark></p>
 </div>
-<table id="dgiwg_process_req" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. DGIWG process Normative Requirements</caption>
+<div class="paragraph">
+<p>GetStatus operation returns back a StatusInfo document, providing identification and status information about jobs on a WPS server.</p>
+</div>
+<table id="get_status" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 9. StatusInfo document</caption>
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">No.</th>
-<th class="tableblock halign-left valign-top">Requirement</th>
-<th class="tableblock halign-left valign-top">Compliance</th>
+<th class="tableblock halign-left valign-top">Names</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+<th class="tableblock halign-left valign-top">Data type and values</th>
+<th class="tableblock halign-left valign-top">Multiplicity and use</th>
+<th class="tableblock halign-left valign-top">DGIWG</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A DGIWG process shall &#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JobID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unambiguously identifier of a job within a WPS instance.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A DGIWG proces &#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Well-known identifier describing the status of the job.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ExpirationDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date and time by which the job and its results will be no longer accessible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional) Include if required.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EstimatedCompletion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date and time by which the processing job will be finished.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional) Include if available.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NextPoll</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date and time for the next suggested status polling.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional) Include if required.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PercentCompleted</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Percentage of process that has been completed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer{0..100}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional) Include if available.</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_non_normative_recommendations_for_implementation_2"><a class="anchor" href="#_non_normative_recommendations_for_implementation_2"></a>8.3. Non-Normative Recommendations for Implementation</h3>
+<div class="sect3">
+<h4 id="_getresult_operation"><a class="anchor" href="#_getresult_operation"></a>7.4.5. GetResult operation</h4>
 <div class="paragraph">
-<p>The non-normative recommandations defined by this profile are summarized in <a href="#dgiwg_process_rec">Table 10</a>.</p>
+<p><mark>anything to be added ?</mark></p>
 </div>
-<table id="dgiwg_process_rec" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. DGIWG process Non-normative Recommendations for DGIWG processes.</caption>
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">No.</th>
-<th class="tableblock halign-left valign-top">Requirement</th>
-<th class="tableblock halign-left valign-top">Compliance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A DGIWG process should &#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A DGIWG process should &#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-</tr>
-</tbody>
-</table>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-description of process profiles is defined in <a href="http://docs.opengeospatial.org/is/14-065/14-065.html#32" class="bare">http://docs.opengeospatial.org/is/14-065/14-065.html#32</a>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tip</div>
-</td>
-<td class="content">
-A process profile is a description of a process on an interface level. Process profiles may have different levels of abstraction and cover several aspects. On a generic level, a process profile may only refer to the provided functionality of a process, i.e. by giving a verbal or formal definition how the outputs are derived from the inputs. On a concrete level a process profile may completely define inputs and outputs including data type definitions and formats.
-Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. While this specification does not attempt to enforce or suggest any particular process profiles, it provides a mechanism to define common processing functionality within the scope of WPS, thus supporting basic process cataloguing and retrieval tasks for distributed processing infrastructures. Depending on the degree of harmonization, the definitions of process profiles may be used to foster a common understanding of widely used processing functions. However, they may also be used to harmonize the technical details of process interfaces and thus document particular interoperability arrangements between process providers and consumers.
-</td>
-</tr>
-</table>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./images/GenericProcess.png" alt="WPS_GenericProcess">
-</div>
-<div class="title">Figure 2. Generic process model (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</div>
-</div>
-<div class="paragraph">
-<p><strong><em>Requirement 1: a DGIWG process profile shall define Title, Abstract and ID.</em></strong></p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Warning</div>
-</td>
-<td class="content">
-what king of ows:metadata ?
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p><strong><em>Requirement 2: ID of a DGIWG process profile shall be an URI with following form <a href="http://dgiwg.org/xxx/xx/xxx" class="bare">http://dgiwg.org/xxx/xx/xxx</a>.</em></strong></p>
-</div>
-<div class="paragraph">
-<p><strong><em>Requirement 3: a DGIWG process profile shall be documented using template provided in Annex XX</em></strong></p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Warning</div>
-</td>
-<td class="content">
-TBD
-recomandation for registering profile on DGIWG website/registry discussion
-</td>
-</tr>
-</table>
 </div>
 </div>
 </div>
@@ -1215,7 +1144,7 @@ recomandation for registering profile on DGIWG website/registry discussion
 <p>An Abstract Test Suite is specified in Clause 9 and Annex A of ISO 19105. That Clause and Annex specify the ISO/TC 211 requirements for Abstract Test Suites. Examples of Abstract Test Suites are available in an annex of most ISO 191XX documents, one of the more useful is in ISO 19136. Note that this guidance may be more abstract than needed in an OGC® Implementation Standard.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. A.1.1	Conformance level 1</caption>
+<caption class="title">Table 10. A.1.1	Conformance level 1</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -1268,7 +1197,7 @@ recomandation for registering profile on DGIWG website/registry discussion
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. A.1.2	Test case for validity of XML response entity</caption>
+<caption class="title">Table 11. A.1.2	Test case for validity of XML response entity</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -1297,7 +1226,7 @@ recomandation for registering profile on DGIWG website/registry discussion
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. A.2.1	Conformance level 2</caption>
+<caption class="title">Table 12. A.2.1	Conformance level 2</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -1350,7 +1279,7 @@ recomandation for registering profile on DGIWG website/registry discussion
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. A.2.2	Test case for validity of XML response entity</caption>
+<caption class="title">Table 13. A.2.2	Test case for validity of XML response entity</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -1485,7 +1414,7 @@ owsServiceProvider.xsd</pre>
 </table>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 15. Revision History</caption>
+<caption class="title">Table 14. Revision History</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -1503,6 +1432,13 @@ owsServiceProvider.xsd</pre>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">August 23, 2019</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D. Sarafinof</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">second version</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">July 18, 2018</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">D. Sarafinof</p></td>
@@ -1530,7 +1466,7 @@ owsServiceProvider.xsd</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-04-15 09:10:56 +0200
+Last updated 2019-08-22 10:11:39 +0200
 </div>
 </div>
 <link rel="stylesheet" href="resources/stylesheets/coderay-asciidoctor.css">
