@@ -6,19 +6,20 @@ This chapter defines normative requirements to implement "DGIWG process" class.
 === Normative requirements
 The Normative requirements requested by this conformance class are summarized in <<dgiwg_process_req>>.
 [#dgiwg_process_req,reftext='{table-caption} {counter:table-num}']
-[cols="3",options="header"]
+[cols="1,10,1",options="header"]
 .DGIWG process Normative Requirements
 !===
 |No. | Requirement | Compliance
-|{counter:process_req_table} | A DGIWG process shall ...| M
-|{counter:process_req_table} | A DGIWG proces ...| M
-|{counter:process_req_table} | ...| ...
+|{counter:process_req_table} | a DGIWG generic process profile shall satisfy requirements from http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic (<<OGC-WPS-2.0>>) requirement class.| M
+|{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req2>> for the description of a DGIWG generic process.| M
+|{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req3>> for the description of input/output parameters.| mail
+|{counter:process_req_table} | a DGIWG generic process profile shall be documented using template provided in Annex XX. | M
 !===
 
 === Non-Normative Recommendations for Implementation
 The non-normative recommandations defined by this conformance class are summarized in <<dgiwg_process_rec>>.
 [#dgiwg_process_rec,reftext='{table-caption} {counter:table-num}']
-[cols="3",options="header"]
+[cols="1,10,1",options="header"]
 .DGIWG process Non-normative Recommendations for DGIWG processes.
 !===
 |No. | Requirement | Compliance
@@ -42,7 +43,7 @@ image::./images/GenericProcess.png[WPS_GenericProcess,align=center]
 For convenience, detailed requirement from <<>> are repeated below:
 
 [#dgiwg_req1,reftext='{table-caption} {counter:table-num}']
-[cols="2",options="no-header"]
+[cols="1,8",options="no-header"]
 .WPS 2.0 requirements for generic profile requirement class (http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic)
 !===
 | Requirement | http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic/structure A process description shall comply with the structure defined in Figure 13 and Table 18.
@@ -84,7 +85,7 @@ For convenience, detailed requirement from <<>> are repeated below:
 | Input | Nested Input. | GenericInput structure, Table 19 (this table). | Zero or more (optional) | no change
 !===
 
-*_Requirement {counter:process_req}: a DGIWG generic process profile shall be documented using template provided in Annex XX_*
+*_Requirement {counter:process_req}: a DGIWG generic process profile shall be documented using template provided in Annex XX._*
 
 CAUTION: template to be developped
 
