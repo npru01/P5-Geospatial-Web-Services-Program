@@ -14,8 +14,7 @@ The Normative requirements requested by this conformance class are summarized in
 |{counter:dgiwg_basic_req_table} | a DGIWG Basic WPS server shall provide elements in the GetCapabilities response document as described in tables <<get_cap_serviceID>>, <<get_cap_serviceProvider>>, <<get_cap_OperationsMetadata>>, <<get_cap_Language>> and <<process_sum>>. | M
 |{counter:dgiwg_basic_req_table} | a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString. | M
 |{counter:dgiwg_basic_req_table} |  a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB". | M
-|{counter:dgiwg_basic_req_table} |  a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB". | M   |{counter:dgiwg_basic_req_table} |  a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB". | M
-|{counter:dgiwg_basic_req_table} |  a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB". | M
+
 !===
 
 === Non-Normative Recommendations for Implementation
