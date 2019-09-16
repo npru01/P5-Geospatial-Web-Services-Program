@@ -175,7 +175,7 @@ Output
 	  Abstract	Result set containing indivual distance between each point pair and/or the sum. This should include uom.
 	  Metadata
 
-==== Process implementation : elevation analysis
+==== Process implementation : distance measurement
 
 Find below a WPS 2.0 example of the distance measurement generic process profile.
 
