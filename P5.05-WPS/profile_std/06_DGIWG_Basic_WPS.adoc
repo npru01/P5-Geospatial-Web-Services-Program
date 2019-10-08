@@ -107,10 +107,11 @@ NOTE: The contents of the CI_ResponsibleParty class are modified to omit the opt
 
 
 #*_Parts of Operation data structure ?_*#
-not hing to be added here ?
+nothing to be added here ?
 
 
 The contents section delivers information about the process offerings of the server.
+
 
 [#process_sum,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
@@ -118,10 +119,10 @@ The contents section delivers information about the process offerings of the ser
 !===
 |Names |Definition | Data type and values | Multiplicity and use | DGIWG
 |Title| Title of a process, normally available for display to a human. | ows:Title | One (mandatory) | One (mandatory)
-|Abstract | Brief narrative description of a process, normally available for display to a human. | ows:Abstract | Zero or more (optional) | *_One or more (other language than english)_*
-|Keywords | Keywords that characterize a process. | ows:Keyword | Zero or more (optional | *_minimal set of keywords to be defined by DGIWG_*
-|Identifier | Unambiguous identifier or name of a process. | ows:Identifier | One (mandatory) | *_to be defined by DGIWG_*
-|Metadata |Reference to more metadata about this item. | ows:Metadata | Zero or more (optional) Include when available and useful | ###?##
+|Abstract | Brief narrative description of a process, normally available for display to a human. | ows:Abstract | Zero or more (optional) | *_One or more (At least english)._*
+|Keywords | Keywords that characterize a process. | ows:Keyword | Zero or more (optional | *_One or more. Minimal set of keywords is required._*
+|Identifier | Unambiguous identifier or name of a process. | ows:Identifier | One (mandatory) | *_Using URI is recommended._*
+|Metadata |Reference to more metadata about this item. | ows:Metadata | Zero or more (optional) Include when available and useful | *_Providing metadata, for example in an human readable form (HTML web page) is recommended._*
 |processModel |Inherited from Table 29. | - | - | #?#
 |jobControlOptions |Inherited from Table 29. | - | - | #?#
 |outputTransmission |Inherited from Table 29. | - | - | #?#
